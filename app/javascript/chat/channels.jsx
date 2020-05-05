@@ -12,11 +12,11 @@ const Channels = ({
   filterQuery,
   channelsLoaded,
 }) => {
-  const channels = chatChannels.map(channel => {
+  const channels = chatChannels.map((channel) => {
     const isActive = parseInt(activeChannelId, 10) === channel.chat_channel_id;
     const isUnopened =
       !isActive && unopenedChannelIds.includes(channel.chat_channel_id);
-    let newMessagesIndicator = isUnopened ? 'new' : 'old';
+    const newMessagesIndicator = isUnopened ? 'new' : 'old';
     const otherClassname = isActive
       ? 'chatchanneltab--active'
       : 'chatchanneltab--inactive';
@@ -53,7 +53,12 @@ const Channels = ({
               }
             />
           </span>
-          {isUnopened ? <span class="crayons-indicator crayons-indicator--accent crayons-indicator--bullet"></span> : ''}{channel.channel_name}
+          {isUnopened ? (
+            <span className="crayons-indicator crayons-indicator--accent crayons-indicator--bullet" />
+          ) : (
+            ''
+          )}
+          {channel.channel_name}
         </span>
       </button>
     );
@@ -72,8 +77,9 @@ const Channels = ({
         </span>
         {' '}
         Welcome to
-        <b> DEV Connect</b>
-        ! You may message anyone you mutually follow.
+        <b> LetsBuild.gg Connect</b>
+        ! You may message anyone you mutually
+        follow.
       </div>
     );
   }
@@ -89,7 +95,7 @@ const Channels = ({
       <div className="chatchannels__config">
         <img alt="" src={ConfigImage} style={{ height: '18px' }} />
         <div className="chatchannels__configmenu">
-          <a href="/settings">DEV Settings</a>
+          <a href="/settings">LetsBuild.gg Settings</a>
           <a href="/report-abuse">Report Abuse</a>
         </div>
       </div>

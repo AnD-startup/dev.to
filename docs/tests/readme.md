@@ -50,7 +50,7 @@ run into any issues. Strive to write good tests for the code you wish to
 contribute.
 
 Travis will deploy your pull request to production after CI passes and a member
-of the DEV team has approved it.
+of the LetsBuild.gg team has approved it.
 
 Our test suite is not perfect and sometimes a re-run is needed.
 

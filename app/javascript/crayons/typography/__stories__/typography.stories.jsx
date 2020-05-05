@@ -17,8 +17,8 @@ export const Description = () => (
     </p>
     <p>
       XS size should be used as little as possible in edge cases. Even though
-      it’s readable we could consider it not meeting DEV’s standards. So keep it
-      for like “asterisk copy” etc.
+      it’s readable we could consider it not meeting LetsBuild.gg’s standards.
+      So keep it for like “asterisk copy” etc.
     </p>
     <p>By default you should be using Regular font weight.</p>
     <p>

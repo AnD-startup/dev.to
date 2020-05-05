@@ -23,8 +23,8 @@ If you run into issues while trying to run `bin/setup` and the error message
 isn't helpful, try running `bin/rails s -p 3000`. For example, you may need to
 `yarn install` before starting the app.
 
-If you're working on DEV regularly, you can use `alias start="bin/startup"` to
-make this even easier. 😊
+If you're working on LetsBuild.gg regularly, you can use
+`alias start="bin/startup"` to make this even easier. 😊
 
 If you're using **`pry`** for debugging in Rails, note that using `foreman` and
 `pry` together works, but it's not as clean as `bin/rails server`.

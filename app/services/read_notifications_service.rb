@@ -16,7 +16,7 @@ class ReadNotificationsService
   #     apns: {
   #       aps: {
   #         alert: {
-  #           title: "DEV Notifications",
+  #           title: "LetsBuild.gg Notifications",
   #           body: "Marking as read 🙂"
   #         }
   #       },

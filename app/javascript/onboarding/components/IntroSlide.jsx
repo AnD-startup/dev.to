@@ -98,16 +98,17 @@ class IntroSlide extends Component {
             <img
               src="/assets/purple-dev-logo.png"
               className="sticker-logo"
-              alt="DEV"
+              alt="LetsBuild.gg"
             />
           </figure>
           <h1 className="introduction-title">
             {this.user.name}
             {' '}
-            &mdash; welcome to DEV!
+            &mdash; welcome to LetsBuild.gg!
           </h1>
           <h2 className="introduction-subtitle">
-            DEV is where programmers share ideas and help each other grow.
+            LetsBuild.gg is where programmers share ideas and help each other
+            grow.
           </h2>
         </div>
 

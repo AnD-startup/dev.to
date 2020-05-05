@@ -146,10 +146,10 @@ FactoryBot.define do
     end
 
     trait :with_all_info do
-      education { "DEV University" }
+      education { "LetsBuild.gg University" }
       employment_title { "Software Engineer" }
-      employer_name { "DEV" }
-      employer_url { "http://dev.to" }
+      employer_name { "LetsBuild.gg" }
+      employer_url { "http://letsbuild.gg" }
       currently_learning { "Preact" }
       mostly_work_with { "Ruby" }
       currently_hacking_on { "JSON-LD" }

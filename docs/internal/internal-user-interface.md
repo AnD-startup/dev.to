@@ -10,9 +10,10 @@ Largely, we try to adhere to
 conventions in these views.
 
 For layout, basic styles, and some interactions, we use
-[Bootstrap 4](https://getbootstrap.com/). DEV isn't dedicated to using Bootstrap
-for everything, but because our design team hasn't spent much time on these
-views, we find it's easier to stick with something many developers already know.
+[Bootstrap 4](https://getbootstrap.com/). LetsBuild.gg isn't dedicated to using
+Bootstrap for everything, but because our design team hasn't spent much time on
+these views, we find it's easier to stick with something many developers already
+know.
 
 When a view requires some custom interactivity, we've historically leaned on
 vanilla JavaScript or jQuery, but going forward we've elected to use
@@ -31,9 +32,9 @@ We tend to prefer the `form_with` helper over the previous `form_for` and
 Stimulus is a modest frontend framework; its primary purpose is manipulating
 HTML. It does not provide templating features.
 
-In the DEV application, [Webpacker](/frontend/webpacker/) is used to load
-Stimulus controllers. Ideally, controllers serve as an abstraction for shared
-functionality between views.
+In the LetsBuild.gg application, [Webpacker](/frontend/webpacker/) is used to
+load Stimulus controllers. Ideally, controllers serve as an abstraction for
+shared functionality between views.
 
 New controllers can be added in `/app/javascript/internal/controllers`. Unit
 tests should exist for each controller in the adjacent

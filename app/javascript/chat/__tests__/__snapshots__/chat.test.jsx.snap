@@ -163,7 +163,7 @@ exports[`<Chat /> should load chat 1`] = `
           <a
             href="/settings"
           >
-            DEV Settings
+            LetsBuild.gg Settings
           </a>
           <a
             href="/report-abuse"

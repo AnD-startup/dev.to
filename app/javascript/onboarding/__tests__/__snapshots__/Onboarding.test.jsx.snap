@@ -338,12 +338,12 @@ preact-render-spy (1 nodes)
         <img
           src="/assets/purple-dev-logo.png"
           class="sticker-logo"
-          alt="DEV"
+          alt="LetsBuild.gg"
          />
       </figure>
-      <h1 class="introduction-title">firstname lastname — welcome to DEV!</h1>
+      <h1 class="introduction-title">firstname lastname — welcome to LetsBuild.gg!</h1>
       <h2 class="introduction-subtitle">
-        DEV is where programmers share ideas and help each other grow.
+        LetsBuild.gg is where programmers share ideas and help each other grow.
       </h2>
     </div>
     <div class="checkbox-form-wrapper">
@@ -455,7 +455,7 @@ preact-render-spy (1 nodes)
       <header class="onboarding-content-header">
         <h1 class="title">Build your profile</h1>
         <h2 class="subtitle">
-          Tell us a little bit about yourself — this is how others will see you on DEV. You’ll always be able to edit this later in your Settings.
+          Tell us a little bit about yourself — this is how others will see you on LetsBuild.gg. You’ll always be able to edit this later in your Settings.
         </h2>
       </header>
       <div class="current-user-info">

@@ -4,12 +4,13 @@ title: Keeping Your Fork In Sync
 
 # Keeping your fork in sync
 
-Now that you have a fork of DEV's source code, there is work you will need to do
-to keep it updated.
+Now that you have a fork of LetsBuild.gg's source code, there is work you will
+need to do to keep it updated.
 
 ## Setup your upstream
 
-Inside your DEV directory, add a remote to the official DEV repo:
+Inside your LetsBuild.gg directory, add a remote to the official LetsBuild.gg
+repo:
 
 ```shell
 git remote add upstream https://github.com/thepracticaldev/dev.to.git

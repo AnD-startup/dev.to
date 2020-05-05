@@ -12,11 +12,11 @@ items:
 # Installation Guide
 
 There are many different ways you can install the **development environment** so
-you can help contribute code to DEV.
+you can help contribute code to LetsBuild.gg.
 
 ## Installing locally
 
-You can install DEV to your local machine and we have instructions for
+You can install LetsBuild.gg to your local machine and we have instructions for
 [Mac](/installation/mac), [Windows](/installation/windows) and
 [Linux](/installation/linux).
 

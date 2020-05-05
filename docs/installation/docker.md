@@ -2,7 +2,7 @@
 title: Docker
 ---
 
-# Installing DEV with Docker
+# Installing LetsBuild.gg with Docker
 
 If you encounter any errors with our Docker setup, please kindly
 [report any issues](https://github.com/thepracticaldev/dev.to/issues/new/choose)!
@@ -23,9 +23,10 @@ recommend you follow the
 [Docker Compose install guide](https://docs.docker.com/compose/install/) as
 well.
 
-## Installing DEV
+## Installing LetsBuild.gg
 
-1. Fork DEV's repository, e.g. <https://github.com/thepracticaldev/dev.to/fork>
+1. Fork LetsBuild.gg's repository, e.g.
+   <https://github.com/thepracticaldev/dev.to/fork>
 1. Clone your forked repository, eg.
    `git clone https://github.com/<your-username>/dev.to.git`
 1. Set up your environment variables/secrets
@@ -68,8 +69,8 @@ The script executes the following steps:
 
 ## Running the Docker app (advanced)
 
-DEV provides a `docker-run.sh` script which can be used to run the Docker app
-with custom options.
+LetsBuild.gg provides a `docker-run.sh` script which can be used to run the
+Docker app with custom options.
 
 Please execute the script itself to view all additional options:
 

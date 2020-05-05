@@ -103,28 +103,16 @@ describe('<Channels />', () => {
           true,
         );
         expect(
-          context
-            .find('.chatchannels__configmenu')
-            .childAt(0)
-            .text(),
-        ).toEqual('DEV Settings');
+          context.find('.chatchannels__configmenu').childAt(0).text(),
+        ).toEqual('LetsBuild.gg Settings');
         expect(
-          context
-            .find('.chatchannels__configmenu')
-            .childAt(0)
-            .attr('href'),
+          context.find('.chatchannels__configmenu').childAt(0).attr('href'),
         ).toEqual('/settings');
         expect(
-          context
-            .find('.chatchannels__configmenu')
-            .childAt(1)
-            .text(),
+          context.find('.chatchannels__configmenu').childAt(1).text(),
         ).toEqual('Report Abuse');
         expect(
-          context
-            .find('.chatchannels__configmenu')
-            .childAt(1)
-            .attr('href'),
+          context.find('.chatchannels__configmenu').childAt(1).attr('href'),
         ).toEqual('/report-abuse');
 
         // welcome message should not exist because there are channels
@@ -143,14 +131,14 @@ describe('<Channels />', () => {
       it('should have the proper elements, attributes, and content', () => {
         const context = shallow(getChannels(true, []));
 
-        // should show "Welcome to DEV Connect message....."
+        // should show "Welcome to LetsBuild.gg Connect message....."
         expect(
           context.find('.chatchannels__channelslistheader').exists(),
         ).toEqual(true);
         expect(
           context.find('.chatchannels__channelslistheader').text(),
         ).toEqual(
-          '👋 Welcome to DEV Connect! You may message anyone you mutually follow.',
+          '👋 Welcome to LetsBuild.gg Connect! You may message anyone you mutually follow.',
         );
 
         expect(context.find('.chatchannels__config').exists()).toEqual(true);
@@ -158,28 +146,16 @@ describe('<Channels />', () => {
           true,
         );
         expect(
-          context
-            .find('.chatchannels__configmenu')
-            .childAt(0)
-            .text(),
-        ).toEqual('DEV Settings');
+          context.find('.chatchannels__configmenu').childAt(0).text(),
+        ).toEqual('LetsBuild.gg Settings');
         expect(
-          context
-            .find('.chatchannels__configmenu')
-            .childAt(0)
-            .attr('href'),
+          context.find('.chatchannels__configmenu').childAt(0).attr('href'),
         ).toEqual('/settings');
         expect(
-          context
-            .find('.chatchannels__configmenu')
-            .childAt(1)
-            .text(),
+          context.find('.chatchannels__configmenu').childAt(1).text(),
         ).toEqual('Report Abuse');
         expect(
-          context
-            .find('.chatchannels__configmenu')
-            .childAt(1)
-            .attr('href'),
+          context.find('.chatchannels__configmenu').childAt(1).attr('href'),
         ).toEqual('/report-abuse');
       });
     });
@@ -206,22 +182,13 @@ describe('<Channels />', () => {
             .attr('data-channel-slug'),
         ).toEqual('@1'); // check user
         expect(
-          context
-            .find('.chatchannels__channelslist')
-            .childAt(2)
-            .text(),
+          context.find('.chatchannels__channelslist').childAt(2).text(),
         ).toEqual('group channel 2'); // ensure user has no text
         expect(
-          context
-            .find('.chatchannels__channelslist')
-            .childAt(1)
-            .text(),
+          context.find('.chatchannels__channelslist').childAt(1).text(),
         ).toEqual(fakeChannels[0].channel_name);
         expect(
-          context
-            .find('.chatchannels__channelslist')
-            .childAt(3)
-            .text(),
+          context.find('.chatchannels__channelslist').childAt(3).text(),
         ).toEqual(fakeChannels[2].channel_name);
       });
     });

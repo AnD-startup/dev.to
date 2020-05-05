@@ -13,7 +13,7 @@ variable :APP_PROTOCOL, :String, default: "http://"
 
 # Community Related Variables
 variable :COMMUNITY_COPYRIGHT_START_YEAR, :String, default: "2016"
-variable :COMMUNITY_NAME, :String, default: "DEV(local)"
+variable :COMMUNITY_NAME, :String, default: "LetsBuild.gg"
 
 # Service timeout length
 variable :RACK_TIMEOUT_WAIT_TIMEOUT, :Integer, default: 100_000
@@ -120,7 +120,7 @@ variable :GA_TRACKING_ID, :String, default: "Optional"
 # (https://mailchimp.com/developer/)
 variable :MAILCHIMP_API_KEY, :String, default: "Optional-valid"
 
-# Pusher for DEV Connect/notfications
+# Pusher for LetsBuild.gg Connect/notfications
 # (https://pusher.com/docs)
 variable :PUSHER_APP_ID, :String, default: "Optional"
 variable :PUSHER_CLUSTER, :String, default: "Optional"
@@ -145,7 +145,7 @@ variable :SLACK_WEBHOOK_URL, :String, default: ""
 variable :STRIPE_PUBLISHABLE_KEY, :String, default: "Optional"
 variable :STRIPE_SECRET_KEY, :String, default: "Optional"
 
-# For video calling in DEV Connect
+# For video calling in LetsBuild.gg Connect
 # (https://www.twilio.com/docs/video)
 variable :TWILIO_ACCOUNT_SID, :String, default: "Optional"
 variable :TWILIO_VIDEO_API_KEY, :String, default: "Optional"

@@ -17,7 +17,7 @@ then
 
 	echo "|---"
 	echo "|"
-	echo "| Welcome to DEV.TO interactive docker demo setup guide."
+	echo "| Welcome to LetsBuild.gg.TO interactive docker demo setup guide."
 	echo "|"
 	echo "| For logins to work, we will need either GITHUB or TWITTER API keys"
 	echo "|"
@@ -91,12 +91,12 @@ echo "# RUN_MODE can either be the following"
 echo "#"
 echo "# - 'DEV'  : Start up the container into bash, with a quick start guide"
 echo "# - 'DEMO' : Start up the container, and run dev.to"
-echo "# - 'RESET-DEV'   : Resets postgresql and upload data directory for a clean deployment, before running as DEV mode"
+echo "# - 'RESET-DEV'   : Resets postgresql and upload data directory for a clean deployment, before running as LetsBuild.gg mode"
 echo "# - 'RESET-DEMO'  : Resets postgresql and upload data directory for a clean deployment, before running as DEMO mode"
 echo "# - 'INTERACTIVE-DEMO' : Runs this script in 'interactive' mode to setup the 'DEMO'"
 echo "#"
 echo "# So for example to run a development container in bash it's simply"
-echo "# './docker-run.sh DEV'"
+echo "# './docker-run.sh LetsBuild.gg'"
 echo "#"
 echo "# Finally to run a working demo, you will need to provide either..."
 echo "# './docker-run.sh .... -e GITHUB_KEY=<?> -e GITHUB_SECRET=<?>"
@@ -305,7 +305,7 @@ echo "#---"
 
 if [ "$RUN_MODE" = "DEV" ]
 then
-	# Build the DEV mode container
+	# Build the LetsBuild.gg mode container
 	docker build --target alpine-ruby-node -t dev-to:dev . || exit $?
 else
 	# Build the DEMO mode container
@@ -353,7 +353,7 @@ echo "#---"
 mkdir -p "$UPLOAD_DIR"
 
 #
-# in DEV mode - lets run in interactive mode
+# in LetsBuild.gg mode - lets run in interactive mode
 #
 if [ "$RUN_MODE" = "DEV" ]
 then

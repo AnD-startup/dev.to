@@ -1,8 +1,9 @@
 # Maintainer Processes
 
-This document contains basic instructions for the maintainers of the DEV
-application. It's a work in-progress, but should allow the DEV Core Team to
-document processes and strategies in a transparent way!
+This document contains basic instructions for the maintainers of the
+LetsBuild.gg application. It's a work in-progress, but should allow the
+LetsBuild.gg Core Team to document processes and strategies in a transparent
+way!
 
 # Skipping CI
 
@@ -40,7 +41,7 @@ thoughts.
 At the time of writing, we tend to prefer squashing PRs into a single commit and
 merging them. This is easily (and safely) achieved using the GitHub UI.
 
-# Deploying DEV
+# Deploying LetsBuild.gg
 
 If the application needs to be deployed when the code is merged, appending
 [deploy] to the merge commit's message will trigger a deploy.

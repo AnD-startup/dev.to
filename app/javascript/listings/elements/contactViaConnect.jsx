@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const ContactViaConnect = ({ onChange, checked }) => (
   <div className="field">
     <label className="listingform__label" htmlFor="contact_via_connect">
-      Allow Users to Message Me Via In-App Chat (DEV Connect)
+      Allow Users to Message Me Via In-App Chat (LetsBuild.gg Connect)
     </label>
     <input
       type="checkbox"

@@ -4,7 +4,7 @@ title: Webpacker
 
 # Webpacker
 
-DEV has two Javascript codebases.
+LetsBuild.gg has two Javascript codebases.
 
 One contains plain Javascript, you can read about it
 [in its own guide](/frontend/plain-js).
@@ -18,8 +18,8 @@ integrated into the Rails app using `Webpacker`.
 There is a packs directory `/app/javascript/packs` where you can create new
 "pack" files. Pack files are initializers for Webpacker.
 
-Since DEV is not a Single Page Application (SPA), Preact components are mounted
-as needed by including the pack file in the view files.
+Since LetsBuild.gg is not a Single Page Application (SPA), Preact components are
+mounted as needed by including the pack file in the view files.
 
 For example:
 

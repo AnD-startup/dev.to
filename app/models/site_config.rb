@@ -1,7 +1,7 @@
 # Site configuration based on RailsSettings models,
 # see <https://github.com/huacnlee/rails-settings-cached> for further info
 
-# Defaults are currently very DEV-oriented.
+# Defaults are currently very LetsBuild.gg-oriented.
 # Should change to more truly generic values in future.
 
 class SiteConfig < RailsSettings::Base

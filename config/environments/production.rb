@@ -109,7 +109,7 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  # DEV uses the RedisCloud Heroku Add-On which comes with the predefined env variable REDISCLOUD_URL
+  # LetsBuild.gg uses the RedisCloud Heroku Add-On which comes with the predefined env variable REDISCLOUD_URL
   redis_url = ENV["REDISCLOUD_URL"]
   redis_url ||= ENV["REDIS_URL"]
   DEFAULT_EXPIRATION = 24.hours.to_i.freeze

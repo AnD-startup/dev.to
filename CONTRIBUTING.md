@@ -48,8 +48,8 @@ When in doubt, ask a
 mentioning us on the issue.
 
 **Documentation** is almost always a great place to start contributing to a new
-project. DEV is an Open Source, community-driven project, so providing and
-maintaining quality documentation is one of our most important jobs. You can
+project. LetsBuild.gg is an Open Source, community-driven project, so providing
+and maintaining quality documentation is one of our most important jobs. You can
 find more information about contributing to the documentation in the
 [docs/ directory](https://github.com/thepracticaldev/dev.to/blob/master/docs/contributing.md)!
 
@@ -119,14 +119,15 @@ score.
 
 ### Please use inclusive language
 
-Inclusion and respect are core tenents of our [code of conduct](https://dev.to/code-of-conduct)
-and we encourage thoughtful language all the way down to the code. Some coding
-metaphors are alienating or triggering and we ask that contributors go the extra mile
-to submit code which is inclusive in nature.
+Inclusion and respect are core tenents of our
+[code of conduct](https://dev.to/code-of-conduct) and we encourage thoughtful
+language all the way down to the code. Some coding metaphors are alienating or
+triggering and we ask that contributors go the extra mile to submit code which
+is inclusive in nature.
 
-If you unintentionally include language deemed harmful, there is no shame. We will
-simply work together to settle on an alternative we are all comfortable with. This 
-extra care for naming tends to result in cleaner code as a biproduct.
+If you unintentionally include language deemed harmful, there is no shame. We
+will simply work together to settle on an alternative we are all comfortable
+with. This extra care for naming tends to result in cleaner code as a biproduct.
 
 ### Create a pull request
 

@@ -6,7 +6,7 @@ module Search
       Search::FeedContent,
       Search::Reaction,
       Search::Tag,
-      Search::User,
+      # Search::User,
     ].freeze
 
     class << self

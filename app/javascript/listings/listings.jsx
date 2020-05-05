@@ -448,7 +448,7 @@ export class Listings extends Component {
                 <b>
                   Contact
                   {` ${openedListing.author.name} `}
-                  via DEV Connect
+                  via LetsBuild.gg Connect
                 </b>
               </p>
             ) : (
@@ -520,7 +520,7 @@ export class Listings extends Component {
               href="/about-listings"
               className="single-classified-listing-info-link"
             >
-              About DEV Listings
+              About LetsBuild.gg Listings
             </a>
             <div className="single-classified-listing-container__spacer" />
           </div>

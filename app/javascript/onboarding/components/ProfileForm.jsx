@@ -82,8 +82,8 @@ class ProfileForm extends Component {
             <h1 className="title">Build your profile</h1>
             <h2 className="subtitle">
               Tell us a little bit about yourself — this is how others will see
-              you on DEV. You’ll always be able to edit this later in your
-              Settings.
+              you on LetsBuild.gg. You’ll always be able to edit this later in
+              your Settings.
             </h2>
           </header>
           <div className="current-user-info">

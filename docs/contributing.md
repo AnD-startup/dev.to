@@ -2,19 +2,20 @@
 title: Contributing to the Docs
 ---
 
-# Contributing to DEV's developer documentation
+# Contributing to LetsBuild.gg's developer documentation
 
 Contributions to the documentation are always appreciated! Thank you for making
-an effort to improve the developer experience of contributing to the DEV
-project.
+an effort to improve the developer experience of contributing to the
+LetsBuild.gg project.
 
 # Running the documentation locally
 
-Like DEV, this site is open source and the code is [hosted on GitHub][docs]. If
-you find any incorrect information, or a even a typo, we'd love to see a pull
-request. Follow these steps to get the documentation site running locally.
+Like LetsBuild.gg, this site is open source and the code is [hosted on
+GitHub][docs]. If you find any incorrect information, or a even a typo, we'd
+love to see a pull request. Follow these steps to get the documentation site
+running locally.
 
-DEV's documentation is built with [GitDocs NodeJS library][gitdocs].
+LetsBuild.gg's documentation is built with [GitDocs NodeJS library][gitdocs].
 
 The first step to running the documentations locally is to install the `GitDocs`
 package globally.

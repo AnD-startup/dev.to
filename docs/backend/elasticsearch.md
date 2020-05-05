@@ -9,12 +9,12 @@ title: Elasticsearch
 > unstructured. Elasticsearch is built on Apache Lucene and was first released
 > in 2010 by Elastic.
 
-# How DEV uses Elasticsearch
+# How LetsBuild.gg uses Elasticsearch
 
 ### Searchable Models
 
-At DEV we use Elasticsearch for all of our user-facing searching needs. Models
-that are searched using Elasticsearch are:
+At LetsBuild.gg we use Elasticsearch for all of our user-facing searching needs.
+Models that are searched using Elasticsearch are:
 
 - Tags
 - Classified Listings

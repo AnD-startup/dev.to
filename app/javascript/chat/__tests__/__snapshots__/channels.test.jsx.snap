@@ -111,7 +111,7 @@ exports[`<Channels /> expanded with chat channels should render and test snapsho
       <a
         href="/settings"
       >
-        DEV Settings
+        LetsBuild.gg Settings
       </a>
       <a
         href="/report-abuse"
@@ -142,7 +142,7 @@ exports[`<Channels /> expanded without chat channels should render and test snap
       </span>
        Welcome to
       <b>
-         DEV Connect
+         LetsBuild.gg Connect
       </b>
       ! You may message anyone you mutually follow.
     </div>
@@ -165,7 +165,7 @@ exports[`<Channels /> expanded without chat channels should render and test snap
       <a
         href="/settings"
       >
-        DEV Settings
+        LetsBuild.gg Settings
       </a>
       <a
         href="/report-abuse"

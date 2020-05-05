@@ -1,29 +1,17 @@
 {
-  "name": "DEV Docs",
+  "name": "LetsBuild.gg Docs",
   "root": "./",
   "logo": "devblacksquarelogo.svg",
   "header_links": [
     {
       "title": "Repo",
-      "href": "https://github.com/thepracticaldev/dev.to",
+      "href": "https://github.com/letsbuildgg",
       "target": "_blank",
       "rel": "noopener noreferrer nofollow"
     },
     {
-      "title": "DEV",
-      "href": "https://dev.to",
-      "target": "_blank",
-      "rel": "noopener noreferrer nofollow"
-    },
-    {
-      "title": "Ruby doc",
-      "href": "http://docs.dev.to/ruby-doc",
-      "target": "_blank",
-      "rel": "noopener noreferrer nofollow"
-    },
-    {
-      "title": "API doc",
-      "href": "http://docs.dev.to/api",
+      "title": "LetsBuild.gg",
+      "href": "https://letsbuild.gg",
       "target": "_blank",
       "rel": "noopener noreferrer nofollow"
     }

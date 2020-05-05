@@ -5,14 +5,14 @@ title: Liquid Tags
 # Liquid Tags
 
 Liquid tags are special elements of the
-[DEV Markdown editor](https://dev.to/new).
+[LetsBuild.gg Markdown editor](https://dev.to/new).
 
 They are custom embeds that are added via a `{% %}` syntax.
 [Liquid](https://shopify.github.io/liquid/) is a templating language developed
 by Shopify.
 
-Liquid embeds are for tweets, like `{% tweet 765282762081329153 %}` or a DEV
-user profile preview, like `{% user jess %}` etc.
+Liquid embeds are for tweets, like `{% tweet 765282762081329153 %}` or a
+LetsBuild.gg user profile preview, like `{% user jess %}` etc.
 
 They make for good community contributions because they can be extended and
 improved consistently. It is truly how we extend the functionality of the
@@ -27,7 +27,7 @@ arguments they take. Currently, this could use improvements.
 Liquid tags are "compiled" when an article is saved. So you will need to re-save
 articles to see HTML changes.
 
-Here is a bunch of liquid tags supported on DEV:
+Here is a bunch of liquid tags supported on LetsBuild.gg:
 
 ```liquid
 {% link https://dev.to/kazz/boost-your-productivity-using-markdown-1be %}

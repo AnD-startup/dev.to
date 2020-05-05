@@ -5,9 +5,9 @@
 
 openapi: "3.0.3"
 info:
-  title: DEV API (beta)
+  title: LetsBuild.gg API (beta)
   description: |
-    Access DEV articles, users and other resources via API.
+    Access LetsBuild.gg articles, users and other resources via API.
 
     All endpoints that don't require authentication are CORS enabled.
 
@@ -16,13 +16,13 @@ info:
   version: "0.7.0"
   termsOfService: https://dev.to/terms
   contact:
-    name: DEV Team
+    name: LetsBuild.gg Team
     url: https://dev.to/contact
     email: yo@dev.to
   x-logo:
     url: https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-128-1a9016906487b8ba17f2d3d3c28f9d1cb3ae9b45d685cc2711e20f6b3c6730df.png
     backgroundColor: "#000"
-    altText: "DEV logo"
+    altText: "LetsBuild.gg logo"
 
 servers:
   - url: https://dev.to/api
@@ -92,19 +92,19 @@ components:
         API Key authentication.
 
         Authentication for some endpoints, like write operations on the
-        Articles API require a DEV API key.
+        Articles API require a LetsBuild.gg API key.
 
         ### Getting an API key
 
         To obtain one, please follow these steps:
 
           - visit https://dev.to/settings/account
-          - in the "DEV API Keys" section create a new key by adding a
+          - in the "LetsBuild.gg API Keys" section create a new key by adding a
             description and clicking on "Generate API Key"
 
-            ![obtain a DEV API Key](https://user-images.githubusercontent.com/146201/64421366-af3f8b00-d0a1-11e9-8ff6-7cc0ca6e854e.png)
+            ![obtain a LetsBuild.gg API Key](https://user-images.githubusercontent.com/146201/64421366-af3f8b00-d0a1-11e9-8ff6-7cc0ca6e854e.png)
           - You'll see the newly generated key in the same view
-            ![generated DEV API Key](https://user-images.githubusercontent.com/146201/64421367-af3f8b00-d0a1-11e9-9831-73d3bdfdff66.png)
+            ![generated LetsBuild.gg API Key](https://user-images.githubusercontent.com/146201/64421367-af3f8b00-d0a1-11e9-9831-73d3bdfdff66.png)
       name: api-key
       in: header
     oauth2:
@@ -726,7 +726,7 @@ components:
             contact_via_connect:
               description: |
                 True if users are allowed to contact the listing's owner
-                via DEV connect, false otherwise.
+                via LetsBuild.gg connect, false otherwise.
 
                 Defaults to false.
               type: boolean
@@ -779,7 +779,7 @@ components:
             contact_via_connect:
               description: |
                 True if users are allowed to contact the listing's owner
-                via DEV connect, false otherwise.
+                via LetsBuild.gg connect, false otherwise.
 
                 Defaults to false.
               type: boolean
@@ -948,7 +948,7 @@ components:
             - events
           properties:
             source:
-              description: The name of the requester, eg. "DEV"
+              description: The name of the requester, eg. "LetsBuild.gg"
               type: string
             target_url:
               type: string
@@ -969,7 +969,7 @@ components:
           type: integer
           format: int64
         source:
-          description: The name of the requester, eg. "DEV"
+          description: The name of the requester, eg. "LetsBuild.gg"
           type: string
         target_url:
           type: string
@@ -993,7 +993,7 @@ components:
           type: integer
           format: int64
         source:
-          description: The name of the requester, eg. "DEV"
+          description: The name of the requester, eg. "LetsBuild.gg"
           type: string
         target_url:
           type: string
@@ -1039,7 +1039,7 @@ components:
       value:
         - type_of: article
           id: 194541
-          title: There's a new DEV theme in town for all you 10x hackers out there (plus one
+          title: There's a new LetsBuild.gg theme in town for all you 10x hackers out there (plus one
             actually useful new feature)
           description: ''
           cover_image: https://res.cloudinary.com/practicaldev/image/fetch/s--74Bl23tz--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--xU8cbIK4--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/8a39dzf3oovzc2snl7iv.png
@@ -1073,7 +1073,7 @@ components:
             profile_image: https://res.cloudinary.com/practicaldev/image/fetch/s--Y1sq1tFG--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/1/f451a206-11c8-4e3d-8936-143d0a7e65bb.png
             profile_image_90: https://res.cloudinary.com/practicaldev/image/fetch/s--DcW51A6v--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/1/f451a206-11c8-4e3d-8936-143d0a7e65bb.png
           organization:
-            name: The DEV Team
+            name: The LetsBuild.gg Team
             username: devteam
             slug: devteam
             profile_image: https://res.cloudinary.com/practicaldev/image/fetch/s--0kDBq1Ne--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/organization/profile_image/1/0213bbaa-d5a1-4d25-9e7a-10c30b455af0.png
@@ -1137,7 +1137,7 @@ components:
         article:
           title: Hello, World!
           published: true
-          body_markdown: Hello DEV, this is my first post
+          body_markdown: Hello LetsBuild.gg, this is my first post
           tags: ["discuss", "help"]
           series: Hello series
           canonical_url: https://example.com/blog/hello
@@ -1154,13 +1154,13 @@ components:
             canonical_url: https://example.com/blog/hello
             ---
 
-            Hello DEV, this is my first post
+            Hello LetsBuild.gg, this is my first post
     ArticleCreateOrganization:
       value:
         article:
           title: Hello, World!
           published: true
-          body_markdown: Hello DEV, this is my first post
+          body_markdown: Hello LetsBuild.gg, this is my first post
           tags: ["discuss", "help"]
           series: Hello series
           canonical_url: https://example.com/blog/hello
@@ -1527,14 +1527,14 @@ components:
       value:
         webhook_endpoint:
           target_url: https://example.com/webhooks/webhook1
-          source: DEV
+          source: LetsBuild.gg
           events:
             - article_created
     WebhookShow:
       value:
         type_of: webhook_endpoint
         id: 1
-        source: DEV
+        source: LetsBuild.gg
         target_url: https://example.com/webhooks/webhook1
         events:
           - article_created
@@ -1550,7 +1550,7 @@ components:
 
 tags:
   - name: articles
-    description: Articles are all the posts users create on DEV
+    description: Articles are all the posts users create on LetsBuild.gg
   - name: comments
     description: Users can leave comments to articles and podcasts episodes
   - name: followers
@@ -1576,7 +1576,7 @@ paths:
       description: |
         This endpoint allows the client to retrieve a list of articles.
 
-        "Articles" are all the posts that users create on DEV that typically
+        "Articles" are all the posts that users create on LetsBuild.gg that typically
         show up in the feed. They can be a blog post, a discussion question,
         a help thread etc. but is referred to as article within the code.
 
@@ -1678,7 +1678,7 @@ paths:
       description: |
         This endpoint allows the client to create a new article.
 
-        "Articles" are all the posts that users create on DEV that typically
+        "Articles" are all the posts that users create on LetsBuild.gg that typically
         show up in the feed. They can be a blog post, a discussion question,
         a help thread etc. but is referred to as article within the code.
 
@@ -1831,7 +1831,7 @@ paths:
       description: |
         This endpoint allows the client to update an existing article.
 
-        "Articles" are all the posts that users create on DEV that typically
+        "Articles" are all the posts that users create on LetsBuild.gg that typically
         show up in the feed. They can be a blog post, a discussion question,
         a help thread etc. but is referred to as article within the code.
 
@@ -1935,7 +1935,7 @@ paths:
         This endpoint allows the client to retrieve a list of published articles
         on behalf of an authenticated user.
 
-        "Articles" are all the posts that users create on DEV that typically
+        "Articles" are all the posts that users create on LetsBuild.gg that typically
         show up in the feed. They can be a blog post, a discussion question,
         a help thread etc. but is referred to as article within the code.
 
@@ -1984,7 +1984,7 @@ paths:
         This endpoint allows the client to retrieve a list of published articles
         on behalf of an authenticated user.
 
-        "Articles" are all the posts that users create on DEV that typically
+        "Articles" are all the posts that users create on LetsBuild.gg that typically
         show up in the feed. They can be a blog post, a discussion question,
         a help thread etc. but is referred to as article within the code.
 
@@ -2033,7 +2033,7 @@ paths:
         This endpoint allows the client to retrieve a list of unpublished articles
         on behalf of an authenticated user.
 
-        "Articles" are all the posts that users create on DEV that typically
+        "Articles" are all the posts that users create on LetsBuild.gg that typically
         show up in the feed. They can be a blog post, a discussion question,
         a help thread etc. but is referred to as article within the code.
 
@@ -2082,7 +2082,7 @@ paths:
         This endpoint allows the client to retrieve a list of all articles on
         behalf of an authenticated user.
 
-        "Articles" are all the posts that users create on DEV that typically
+        "Articles" are all the posts that users create on LetsBuild.gg that typically
         show up in the feed. They can be a blog post, a discussion question,
         a help thread etc. but is referred to as article within the code.
 
@@ -2281,7 +2281,7 @@ paths:
       description: |
         This endpoint allows the client to retrieve a list of listings.
 
-        "Listings" are classified ads that users create on DEV.
+        "Listings" are classified ads that users create on LetsBuild.gg.
         They can be related to conference announcements, job offers, mentorships,
         upcoming events and more.
 
@@ -2325,7 +2325,7 @@ paths:
       description: |
         This endpoint allows the client to create a new listing.
 
-        "Listings" are classified ads that users create on DEV.
+        "Listings" are classified ads that users create on LetsBuild.gg.
         They can be related to conference announcements, job offers, mentorships,
         upcoming events and more.
 
@@ -2430,7 +2430,7 @@ paths:
         This endpoint allows the client to retrieve a list of listings belonging
         to the specified category.
 
-        "Listings" are classified ads that users create on DEV.
+        "Listings" are classified ads that users create on LetsBuild.gg.
         They can be related to conference announcements, job offers, mentorships,
         upcoming events and more.
 
@@ -2866,7 +2866,7 @@ paths:
                   value:
                     - type_of: webhook_endpoint
                       id: 1
-                      source: DEV
+                      source: LetsBuild.gg
                       target_url: https://example.com/webhooks/webhook1
                       events:
                         - article_created
@@ -2954,7 +2954,7 @@ paths:
           source: |
             curl -X POST -H "Content-Type: application/json" \
               -H "api-key: API_KEY" \
-              -d '{"webhook_endpoint":{"target_url":"https://example.org/webhooks/webhook1","source":"DEV","events":["article_created"]}}' \
+              -d '{"webhook_endpoint":{"target_url":"https://example.org/webhooks/webhook1","source":"LetsBuild.gg","events":["article_created"]}}' \
               https://dev.to/api/webhooks
 
   /webhooks/{id}:

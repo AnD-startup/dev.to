@@ -24,8 +24,8 @@ export default function initBlock() {
         },
       }),
     })
-      .then(response => response.json())
-      .then(response => {
+      .then((response) => response.json())
+      .then((response) => {
         if (response.result === 'unblocked') {
           blockButton.innerText = 'Block';
           /* eslint-disable-next-line no-use-before-define */
@@ -36,7 +36,7 @@ export default function initBlock() {
           );
         }
       })
-      .catch(e => {
+      .catch((e) => {
         window.alert(
           `Something went wrong: ${e}. -- Please refresh the page to try again.`,
         );
@@ -48,7 +48,7 @@ export default function initBlock() {
       `Are you sure you want to block this person? This will:
       - prevent them from commenting on your posts
       - block all notifications from them
-      - prevent them from messaging you via DEV Connect`,
+      - prevent them from messaging you via LetsBuild.gg Connect`,
     );
     if (confirmBlock) {
       fetch(`/user_blocks`, {
@@ -64,8 +64,8 @@ export default function initBlock() {
           },
         }),
       })
-        .then(response => response.json())
-        .then(response => {
+        .then((response) => response.json())
+        .then((response) => {
           if (response.result === 'blocked') {
             blockButton.innerText = 'Unblock';
             blockButton.addEventListener('click', unblock, { once: true });
@@ -75,7 +75,7 @@ export default function initBlock() {
             );
           }
         })
-        .catch(e => {
+        .catch((e) => {
           window.alert(
             `Something went wrong: ${e}. -- Please refresh the page to try again.`,
           );
@@ -93,8 +93,8 @@ export default function initBlock() {
     blockButton.style.display = 'none';
   } else {
     fetch(`/user_blocks/${profileUserId}`)
-      .then(response => response.json())
-      .then(response => {
+      .then((response) => response.json())
+      .then((response) => {
         if (response.result === 'blocking') {
           blockButton.innerText = 'Unblock';
           blockButton.addEventListener('click', unblock, { once: true });

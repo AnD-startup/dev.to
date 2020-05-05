@@ -1,7 +1,7 @@
 <div align="center">
   <br>
-  <img alt="DEV" src="https://thepracticaldev.s3.amazonaws.com/i/ro3538by3b2fupbs63sr.png" width="500px">
-  <h1>DEV Community 👩‍💻👨‍💻</h1>
+  <img alt="LetsBuild.gg" src="https://thepracticaldev.s3.amazonaws.com/i/ro3538by3b2fupbs63sr.png" width="500px">
+  <h1>LetsBuild.gg Community 👩‍💻👨‍💻</h1>
   <strong>The Human Layer of the Stack</strong>
 </div>
 <br>
@@ -45,16 +45,17 @@
 </p>
 
 Welcome to the [dev.to](https://dev.to) codebase. We are so excited to have you.
-With your help, we can build out DEV to be more stable and better serve our
-community.
+With your help, we can build out LetsBuild.gg to be more stable and better serve
+our community.
 
 ## What is dev.to?
 
-[dev.to](https://dev.to) (or just DEV) is a platform where software developers
-write articles, take part in discussions, and build their professional profiles.
-We value supportive and constructive dialogue in the pursuit of great code and
-career growth for all members. The ecosystem spans from beginner to advanced
-developers, and all are welcome to find their place within our community. ❤️
+[dev.to](https://dev.to) (or just LetsBuild.gg) is a platform where software
+developers write articles, take part in discussions, and build their
+professional profiles. We value supportive and constructive dialogue in the
+pursuit of great code and career growth for all members. The ecosystem spans
+from beginner to advanced developers, and all are welcome to find their place
+within our community. ❤️
 
 ## Table of Contents
 
@@ -131,7 +132,7 @@ A more complete overview of our stack is available in
 
 ## Vulnerability disclosure
 
-We welcome security research on DEV under the terms of our
+We welcome security research on LetsBuild.gg under the terms of our
 [vulnerability disclosure policy](https://dev.to/security).
 
 ## License
@@ -143,8 +144,9 @@ later version. Please see the [LICENSE](./LICENSE.md) file in our repository for
 the full text.
 
 Like many open source projects, we require that contributors provide us with a
-Contributor License Agreement (CLA). By submitting code to the DEV project, you
-are granting us a right to use that code under the terms of the CLA.
+Contributor License Agreement (CLA). By submitting code to the LetsBuild.gg
+project, you are granting us a right to use that code under the terms of the
+CLA.
 
 Our version of the CLA was adapted from the Microsoft Contributor License
 Agreement, which they generously made available to the public domain under

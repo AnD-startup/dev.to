@@ -20,7 +20,7 @@ cd /usr/src/app/
 if [[ "$RUN_MODE" = "DEV" ]]
 then
 	echo ">---"
-	echo "> [dev.to/docker-entrypoint.sh] DEV mode"
+	echo "> [dev.to/docker-entrypoint.sh] LetsBuild.gg mode"
 	echo "> "
 	echo "> Welcome to the dev.to, DEVELOPMENT container, for convenience your repository"
 	echo "> should be mounted onto '/usr/src/app/', and port 3000 should be forwarded to your host machine"

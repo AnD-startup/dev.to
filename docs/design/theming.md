@@ -4,13 +4,13 @@ title: Theming Guidelines
 
 # Theming Guidelines
 
-DEV supports different themes, such as Default, Night, Pink.
+LetsBuild.gg supports different themes, such as Default, Night, Pink.
 
 You can switch the theme at <http://localhost:3000/settings/ux> in the "Style
 Customization" section.
 
-These themes are powered by [CSS custom
-properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties),
+These themes are powered by
+[CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties),
 loaded at runtime by Javascript via `layouts/_user_config.html.erb`.
 
 An example of how it works:
