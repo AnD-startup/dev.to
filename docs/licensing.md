@@ -45,4 +45,4 @@ contribution without further restriction, not assigning the copyright.
 ## What if I have other questions?
 
 Please check out our main repository or send an email to
-[yo@dev.to](mailto:yo@dev.to).
+[support@letsbuild.gg](mailto:support@letsbuild.gg).

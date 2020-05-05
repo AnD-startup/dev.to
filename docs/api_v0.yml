@@ -14,11 +14,11 @@ info:
     Dates and date times, unless otherwise specified, must be in
     the [RFC 3339](https://tools.ietf.org/html/rfc3339) format.
   version: "0.7.0"
-  termsOfService: https://dev.to/terms
+  termsOfService: https://letsbuild.gg/terms
   contact:
     name: LetsBuild.gg Team
     url: https://dev.to/contact
-    email: yo@dev.to
+    email: support@letsbuild.gg
   x-logo:
     url: https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-128-1a9016906487b8ba17f2d3d3c28f9d1cb3ae9b45d685cc2711e20f6b3c6730df.png
     backgroundColor: "#000"

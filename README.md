@@ -153,7 +153,7 @@ Agreement, which they generously made available to the public domain under
 Creative Commons CC0 1.0 Universal.
 
 Any questions, please refer to our [license FAQ](https://docs.dev.to/licensing/)
-doc or email yo@dev.to.
+doc or email support@letsbuild.gg.
 
 <br>
 

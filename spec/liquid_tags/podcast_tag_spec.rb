@@ -31,7 +31,7 @@ RSpec.describe PodcastTag, type: :liquid_tag do
 
   it "rejects invalid link" do
     expect do
-      generate_podcast_liquid_tag("https://dev.to/toolsday/hardware/test/2")
+      generate_podcast_liquid_tag("https://letsbuild.gg/toolsday/hardware/test/2")
     end.to raise_error(StandardError)
   end
 end

@@ -3,7 +3,7 @@
    <ShortName>LetsBuild.gg Search</ShortName>
    <Description>Find posts from the LetsBuild.gg community.</Description>
    <Tags>software development</Tags>
-   <Contact>yo@dev.to</Contact>
+   <Contact>support@letsbuild.gg</Contact>
    <Url type="text/html" 
         template="https://dev.to/search?q={searchTerms}"/>
  </OpenSearchDescription>

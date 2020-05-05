@@ -87,11 +87,11 @@ RSpec.describe URL, type: :lib do
     let(:tag) { build(:tag) }
 
     it "returns the correct URL for a tag with no page" do
-      expect(described_class.tag(tag)).to eq("https://dev.to/t/#{tag.name}")
+      expect(described_class.tag(tag)).to eq("https://letsbuild.gg/t/#{tag.name}")
     end
 
     it "returns the correct URL for a tag" do
-      expect(described_class.tag(tag, 2)).to eq("https://dev.to/t/#{tag.name}/page/2")
+      expect(described_class.tag(tag, 2)).to eq("https://letsbuild.gg/t/#{tag.name}/page/2")
     end
   end
 end

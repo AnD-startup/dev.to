@@ -19,8 +19,8 @@ export class GithubRepos extends Component {
       },
       credentials: 'same-origin',
     })
-      .then(response => response.json())
-      .then(json => {
+      .then((response) => response.json())
+      .then((json) => {
         this.setState({ repos: json });
       })
       .catch(() => {
@@ -30,7 +30,7 @@ export class GithubRepos extends Component {
 
   render() {
     const { repos, erroredOut } = this.state;
-    const allRepos = repos.map(repo => (
+    const allRepos = repos.map((repo) => (
       <SingleRepo
         githubIdCode={repo.github_id_code}
         name={repo.name}
@@ -43,7 +43,7 @@ export class GithubRepos extends Component {
       return (
         <div className="github-repos github-repos-errored">
           An error occurred. Please check your browser console and email
-          <a href="mailto:yo@dev.to"> yo@dev.to </a>
+          <a href="mailto:support@letsbuild.gg"> support@letsbuild.gg </a>
           for more help.
         </div>
       );
