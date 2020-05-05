@@ -73,9 +73,9 @@ variable :AWS_UPLOAD_REGION, :String, default: ""
 
 # AWS SDK
 # (https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/setup-config.html)
-variable :AWS_DEFAULT_REGION, :String, default: "us-east-1"
-variable :AWS_SDK_KEY, :String, default: "Optional"
-variable :AWS_SDK_SECRET, :String, default: "Optional"
+#variable :AWS_DEFAULT_REGION, :String, default: "us-east-1"
+#variable :AWS_SDK_KEY, :String, default: "Optional"
+#variable :AWS_SDK_SECRET, :String, default: "Optional"
 
 # AWS for video storage
 variable :AWS_S3_INPUT_BUCKET, :String, default: "Optional"
@@ -84,12 +84,12 @@ variable :AWS_S3_VIDEO_KEY, :String, default: "Optional"
 
 # Buffer for sending to buffer
 # (https://buffer.com/developers/api)
-variable :BUFFER_ACCESS_TOKEN, :String, default: "Optional"
-variable :BUFFER_FACEBOOK_ID, :String, default: "Optional"
-variable :BUFFER_LINKEDIN_ID, :String, default: "Optional"
-variable :BUFFER_PROFILE_ID, :Integer, default: 0
-variable :BUFFER_TWITTER_ID, :String, default: "Optional"
-variable :BUFFER_LISTINGS_PROFILE, :String, default: "Optional"
+#variable :BUFFER_ACCESS_TOKEN, :String, default: "Optional"
+#variable :BUFFER_FACEBOOK_ID, :String, default: "Optional"
+#variable :BUFFER_LINKEDIN_ID, :String, default: "Optional"
+#variable :BUFFER_PROFILE_ID, :Integer, default: 0
+#variable :BUFFER_TWITTER_ID, :String, default: "Optional"
+#variable :BUFFER_LISTINGS_PROFILE, :String, default: "Optional"
 
 # Cloudinary for image resizing and cache??
 # (https://cloudinary.com/documentation/rails_integration)
@@ -105,8 +105,8 @@ variable :HCTI_API_KEY, :String, default: "Optional"
 
 # Fastly for edge caching
 # (https://docs.fastly.com/api/)
-variable :FASTLY_API_KEY, :String, default: ""
-variable :FASTLY_SERVICE_ID, :String, default: ""
+#variable :FASTLY_API_KEY, :String, default: ""
+#variable :FASTLY_SERVICE_ID, :String, default: ""
 
 # Honeycomb for monitoring and observability
 # (https://www.honeycomb.io/)
@@ -136,9 +136,9 @@ variable :RECAPTCHA_SITE, :String, default: "Optional"
 
 # Slack for customer alerts
 # (https://api.slack.com/)
-variable :SLACK_CHANNEL, :String, default: ""
-variable :SLACK_DEPLOY_CHANNEL, :String, default: ""
-variable :SLACK_WEBHOOK_URL, :String, default: ""
+#variable :SLACK_CHANNEL, :String, default: ""
+#variable :SLACK_DEPLOY_CHANNEL, :String, default: ""
+#variable :SLACK_WEBHOOK_URL, :String, default: ""
 
 # Stripe for payment system
 # (https://stripe.com/docs/api)
@@ -147,19 +147,19 @@ variable :STRIPE_SECRET_KEY, :String, default: "Optional"
 
 # For video calling in DEV Connect
 # (https://www.twilio.com/docs/video)
-variable :TWILIO_ACCOUNT_SID, :String, default: "Optional"
-variable :TWILIO_VIDEO_API_KEY, :String, default: "Optional"
-variable :TWILIO_VIDEO_API_SECRET, :String, default: "Optional"
+#variable :TWILIO_ACCOUNT_SID, :String, default: "Optional"
+#variable :TWILIO_VIDEO_API_KEY, :String, default: "Optional"
+#variable :TWILIO_VIDEO_API_SECRET, :String, default: "Optional"
 
 # For Twitch live stream integration
 # (https://dev.twitch.tv/docs)
-variable :TWITCH_CLIENT_ID, :String, default: "Optional"
-variable :TWITCH_CLIENT_SECRET, :String, default: "Optional"
-variable :TWITCH_WEBHOOK_SECRET, :String, default: "Optional"
+#variable :TWITCH_CLIENT_ID, :String, default: "Optional"
+#variable :TWITCH_CLIENT_SECRET, :String, default: "Optional"
+#variable :TWITCH_WEBHOOK_SECRET, :String, default: "Optional"
 
 # For calling the Stack Exchange API
 # (https://api.stackexchange.com/docs)
-variable :STACK_EXCHANGE_APP_KEY, :String, default: ""
+#variable :STACK_EXCHANGE_APP_KEY, :String, default: ""
 
 # For setting the IDs of the staff and welcoming users
 variable :STAFF_USER_ID, :Integer, default: 1

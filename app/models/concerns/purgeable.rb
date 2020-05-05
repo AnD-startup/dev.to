@@ -23,9 +23,9 @@ module Purgeable
     end
 
     def fastly
-      return if Rails.env.development?
+      nil # if Rails.env.development?
 
-      Fastly.new(api_key: ApplicationConfig["FASTLY_API_KEY"])
+      # Fastly.new(api_key: ApplicationConfig["FASTLY_API_KEY"])
     end
 
     def service

@@ -31,13 +31,13 @@ module Streams
       attr_reader :user, :access_token_service
 
       def webhook_request_body(twitch_user_id)
-        {
-          "hub.callback" => twitch_stream_updates_url_for_user(user),
-          "hub.mode" => "subscribe",
-          "hub.lease_seconds" => WEBHOOK_LEASE_SECONDS,
-          "hub.topic" => "https://api.twitch.tv/helix/streams?user_id=#{twitch_user_id}",
-          "hub.secret" => ApplicationConfig["TWITCH_WEBHOOK_SECRET"]
-        }
+        # {
+        #  "hub.callback" => twitch_stream_updates_url_for_user(user),
+        #  "hub.mode" => "subscribe",
+        #  "hub.lease_seconds" => WEBHOOK_LEASE_SECONDS,
+        #  "hub.topic" => "https://api.twitch.tv/helix/streams?user_id=#{twitch_user_id}",
+        #  "hub.secret" => ApplicationConfig["TWITCH_WEBHOOK_SECRET"]
+        # }
       end
 
       def authentication_request_headers
