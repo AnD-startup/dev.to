@@ -35,9 +35,9 @@ class SiteConfig < RailsSettings::Base
   # Emails
   field :email_addresses, type: :hash, default: {
     default: "support@letsbuild.gg",
-    business: "partners@dev.to",
-    privacy: "privacy@dev.to",
-    members: "members@dev.to"
+    business: "support@letsbuild.to",
+    privacy: "support@letsbuild.to",
+    members: "support@letsbuild.to"
   }
 
   # Meta keywords
@@ -104,5 +104,5 @@ class SiteConfig < RailsSettings::Base
   field :sidebar_tags, type: :array, default: %w[help challenge discuss explainlikeimfive meta watercooler]
 
   # Shop
-  field :shop_url, type: :string, default: "https://shop.dev.to"
+  field :shop_url, type: :string, default: ""
 end
