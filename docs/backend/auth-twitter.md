@@ -52,7 +52,7 @@ application.
 
    ![twitter-1](https://user-images.githubusercontent.com/22895284/51078797-9a019080-16bb-11e9-8130-1cd13008461e.png)
 
-3. Fill in the app name, description, and URL `https://dev.to`.
+3. Fill in the app name, description, and URL `https://letsbuild.gg`.
 
    ![twitter-2](https://user-images.githubusercontent.com/22895284/51078798-9a019080-16bb-11e9-900d-d2677d7c43c4.png)
 

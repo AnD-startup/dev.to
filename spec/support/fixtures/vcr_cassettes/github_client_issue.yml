@@ -79,8 +79,8 @@ http_interactions:
         the bug**\r\n\r\nYou are allowed to change the colour for some of the information
         from your profile page. There are cases when the profile page doesn''t work
         properly when the colours are related.\r\n\r\nSee the pictures below or visit
-        my profile [dev.to/catalinmpit](https://dev.to/catalinmpit).\r\n\r\n**To Reproduce**\r\n\r\n1.
-        Go to [dev.to/catalinmpit](https://dev.to/catalinmpit)\r\n\r\n**Expected behavior**\r\n\r\nMy
+        my profile [dev.to/catalinmpit](https://letsbuild.gg/catalinmpit).\r\n\r\n**To Reproduce**\r\n\r\n1.
+        Go to [dev.to/catalinmpit](https://letsbuild.gg/catalinmpit)\r\n\r\n**Expected behavior**\r\n\r\nMy
         name and other information should be visible.\r\n\r\n**Screenshots**\r\n\r\n![broken-profile-page](https://i.imgur.com/AJyM7tH.png)\r\n\r\n**Aditional
         information**\r\n\r\nPlayed around with the settings and I''ve done this:\r\n\r\n![profile-page-ok](https://i.imgur.com/DLiPXFT.png)\r\n\r\n**Question**\r\n\r\nWhat
         do you recommend to fix the issue? If you have any recommendations, I''m happy
@@ -95,8 +95,8 @@ http_interactions:
       string: '{"text":"**Describe the bug**\r\n\r\nYou are allowed to change the
         colour for some of the information from your profile page. There are cases
         when the profile page doesn''t work properly when the colours are related.\r\n\r\nSee
-        the pictures below or visit my profile [dev.to/catalinmpit](https://dev.to/catalinmpit).\r\n\r\n**To
-        Reproduce**\r\n\r\n1. Go to [dev.to/catalinmpit](https://dev.to/catalinmpit)\r\n\r\n**Expected
+        the pictures below or visit my profile [dev.to/catalinmpit](https://letsbuild.gg/catalinmpit).\r\n\r\n**To
+        Reproduce**\r\n\r\n1. Go to [dev.to/catalinmpit](https://letsbuild.gg/catalinmpit)\r\n\r\n**Expected
         behavior**\r\n\r\nMy name and other information should be visible.\r\n\r\n**Screenshots**\r\n\r\n![broken-profile-page](https://i.imgur.com/AJyM7tH.png)\r\n\r\n**Aditional
         information**\r\n\r\nPlayed around with the settings and I''ve done this:\r\n\r\n![profile-page-ok](https://i.imgur.com/DLiPXFT.png)\r\n\r\n**Question**\r\n\r\nWhat
         do you recommend to fix the issue? If you have any recommendations, I''m happy
@@ -162,10 +162,10 @@ http_interactions:
       string: |
         <p><strong>Describe the bug</strong></p>
         <p>You are allowed to change the colour for some of the information from your profile page. There are cases when the profile page doesn't work properly when the colours are related.</p>
-        <p>See the pictures below or visit my profile <a href="https://dev.to/catalinmpit" rel="nofollow">dev.to/catalinmpit</a>.</p>
+        <p>See the pictures below or visit my profile <a href="https://letsbuild.gg/catalinmpit" rel="nofollow">dev.to/catalinmpit</a>.</p>
         <p><strong>To Reproduce</strong></p>
         <ol>
-        <li>Go to <a href="https://dev.to/catalinmpit" rel="nofollow">dev.to/catalinmpit</a>
+        <li>Go to <a href="https://letsbuild.gg/catalinmpit" rel="nofollow">dev.to/catalinmpit</a>
         </li>
         </ol>
         <p><strong>Expected behavior</strong></p>

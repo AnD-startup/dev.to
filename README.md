@@ -44,14 +44,14 @@
   </a>
 </p>
 
-Welcome to the [dev.to](https://dev.to) codebase. We are so excited to have you.
-With your help, we can build out LetsBuild.gg to be more stable and better serve
-our community.
+Welcome to the [dev.to](https://letsbuild.gg) codebase. We are so excited to
+have you. With your help, we can build out LetsBuild.gg to be more stable and
+better serve our community.
 
 ## What is dev.to?
 
-[dev.to](https://dev.to) (or just LetsBuild.gg) is a platform where software
-developers write articles, take part in discussions, and build their
+[dev.to](https://letsbuild.gg) (or just LetsBuild.gg) is a platform where
+software developers write articles, take part in discussions, and build their
 professional profiles. We value supportive and constructive dialogue in the
 pursuit of great code and career growth for all members. The ecosystem spans
 from beginner to advanced developers, and all are welcome to find their place
@@ -111,29 +111,29 @@ A more complete overview of our stack is available in
 
 ## Core team
 
-- [@benhalpern](https://dev.to/ben)
-- [@jessleenyc](https://dev.to/jess)
-- [@peterkimfrank](https://dev.to/peter)
-- [@maestromac](https://dev.to/maestromac)
-- [@zhao-andy](https://dev.to/andy)
-- [@lightalloy](https://dev.to/lightalloy)
-- [@rhymes](https://dev.to/rhymes)
-- [@jacobherrington](https://dev.to/jacobherrington)
-- [@mstruve](https://dev.to/molly_struve)
-- [@atsmith813](https://dev.to/atsmith813)
-- [@citizen428](https://dev.to/citizen428)
-- [@nickytonline](https://dev.to/nickytonline)
+- [@benhalpern](https://letsbuild.gg/ben)
+- [@jessleenyc](https://letsbuild.gg/jess)
+- [@peterkimfrank](https://letsbuild.gg/peter)
+- [@maestromac](https://letsbuild.gg/maestromac)
+- [@zhao-andy](https://letsbuild.gg/andy)
+- [@lightalloy](https://letsbuild.gg/lightalloy)
+- [@rhymes](https://letsbuild.gg/rhymes)
+- [@jacobherrington](https://letsbuild.gg/jacobherrington)
+- [@mstruve](https://letsbuild.gg/molly_struve)
+- [@atsmith813](https://letsbuild.gg/atsmith813)
+- [@citizen428](https://letsbuild.gg/citizen428)
+- [@nickytonline](https://letsbuild.gg/nickytonline)
 - [@joshpuetz](http://dev.to/joshpuetz)
-- [@vaidehijoshi](https://dev.to/vaidehijoshi)
-- [@juliannatetreault](https://dev.to/juliannatetreault)
-- [@ridhwana](https://dev.to/ridhwana)
-- [@fdoxyz](https://dev.to/fdoxyz)
-- [@msarit](https://dev.to/msarit)
+- [@vaidehijoshi](https://letsbuild.gg/vaidehijoshi)
+- [@juliannatetreault](https://letsbuild.gg/juliannatetreault)
+- [@ridhwana](https://letsbuild.gg/ridhwana)
+- [@fdoxyz](https://letsbuild.gg/fdoxyz)
+- [@msarit](https://letsbuild.gg/msarit)
 
 ## Vulnerability disclosure
 
 We welcome security research on LetsBuild.gg under the terms of our
-[vulnerability disclosure policy](https://dev.to/security).
+[vulnerability disclosure policy](https://letsbuild.gg/security).
 
 ## License
 

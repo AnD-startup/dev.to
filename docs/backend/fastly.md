@@ -10,8 +10,8 @@ and efficiently.
 
 If you want to learn more about we use Fastly, check out this
 [talk](https://www.youtube.com/watch?v=Afy7H04X9Us) that one of our founders,
-[@benhalpern](https://dev.to/ben), gave at RailsConf 2018 talking about how we
-made our app so fast it went viral.
+[@benhalpern](https://letsbuild.gg/ben), gave at RailsConf 2018 talking about
+how we made our app so fast it went viral.
 
 Fastly offers many different configurations (conditions,
 [snippets](https://docs.fastly.com/vcl/vcl-snippets/about-vcl-snippets/), etc.).

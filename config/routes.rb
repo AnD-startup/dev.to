@@ -22,7 +22,7 @@ Rails.application.routes.draw do
     Sidekiq::Web.set :session_secret, Rails.application.secrets[:secret_key_base]
     Sidekiq::Web.set :sessions, Rails.application.config.session_options
     Sidekiq::Web.class_eval do
-      use Rack::Protection, origin_whitelist: ["https://dev.to"] # resolve Rack Protection HttpOrigin
+      use Rack::Protection, origin_whitelist: ["https://letsbuild.gg"] # resolve Rack Protection HttpOrigin
     end
     mount Sidekiq::Web => "/sidekiq"
     mount FieldTest::Engine, at: "abtests"
@@ -314,7 +314,7 @@ Rails.application.routes.draw do
   get "/checkin" => "pages#checkin"
   get "/badge" => "pages#badge"
   get "/💸", to: redirect("t/hiring")
-  get "/survey", to: redirect("https://dev.to/ben/final-thoughts-on-the-state-of-the-web-survey-44nn")
+  get "/survey", to: redirect("https://letsbuild.gg/ben/final-thoughts-on-the-state-of-the-web-survey-44nn")
   get "/events" => "events#index"
   get "/workshops", to: redirect("events")
   get "/sponsors" => "pages#sponsors"

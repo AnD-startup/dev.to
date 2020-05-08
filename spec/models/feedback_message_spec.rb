@@ -5,7 +5,7 @@ RSpec.describe FeedbackMessage, type: :model do
     subject(:feedback_message) do
       described_class.new(
         feedback_type: "abuse-reports",
-        reported_url: "https://dev.to",
+        reported_url: "https://letsbuild.gg",
         category: "spam",
         message: "something",
       )

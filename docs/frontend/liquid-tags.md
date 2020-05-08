@@ -5,7 +5,7 @@ title: Liquid Tags
 # Liquid Tags
 
 Liquid tags are special elements of the
-[LetsBuild.gg Markdown editor](https://dev.to/new).
+[LetsBuild.gg Markdown editor](https://letsbuild.gg/new).
 
 They are custom embeds that are added via a `{% %}` syntax.
 [Liquid](https://shopify.github.io/liquid/) is a templating language developed
@@ -30,11 +30,11 @@ articles to see HTML changes.
 Here is a bunch of liquid tags supported on LetsBuild.gg:
 
 ```liquid
-{% link https://dev.to/kazz/boost-your-productivity-using-markdown-1be %}
+{% link https://letsbuild.gg/kazz/boost-your-productivity-using-markdown-1be %}
 {% user jess %}
 {% tag git %}
 {% devcomment 2d1a %}
-{% podcast https://dev.to/basecspodcast/s2e2--queues-irl %}
+{% podcast https://letsbuild.gg/basecspodcast/s2e2--queues-irl %}
 {% twitter 834439977220112384 %}
 {% glitch earthy-course %}
 {% github thepracticaldev/dev.to %}

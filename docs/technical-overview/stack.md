@@ -10,7 +10,7 @@ For the Dev.to tech stack we use:
 - [_PostgreSQL_](https://www.postgresql.org/) as the primary database
 - [_Redis_](https://redis.io/) to store cached data
 - [_Fastly_](https://www.fastly.com/) for
-  [edge caching](https://dev.to/ben/making-devto-insanely-fast)
+  [edge caching](https://letsbuild.gg/ben/making-devto-insanely-fast)
 - [_Cloudinary_](https://cloudinary.com/) for image manipulation/serving
 - [_Honeybadger_](https://www.honeybadger.io/) for error monitoring
 - [_Timber_](https://timber.io/) for logging

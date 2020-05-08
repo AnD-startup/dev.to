@@ -164,7 +164,7 @@ RSpec.describe "Pages", type: :request do
       end
 
       it "does not prefill if the provide url is /serviceworker.js" do
-        url = "https://dev.to/serviceworker.js"
+        url = "https://letsbuild.gg/serviceworker.js"
         get "/report-abuse", headers: { referer: url }
         expect(response.body).not_to include(url)
       end
@@ -172,7 +172,7 @@ RSpec.describe "Pages", type: :request do
 
     context "when provided the params" do
       it "prefills with the provided param url" do
-        url = "https://dev.to/serviceworker.js"
+        url = "https://letsbuild.gg/serviceworker.js"
         get "/report-abuse", params: { url: url }
         expect(response.body).to include(url)
       end

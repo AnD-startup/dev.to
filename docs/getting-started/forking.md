@@ -27,4 +27,4 @@ LetsBuild.gg][refresh_your_fork]!
 [forking_tutorial]: https://guides.github.com/activities/forking/
 [pull_requests]: https://help.github.com/en/articles/about-pull-requests
 [refresh_your_fork]:
-  https://dev.to/jacobherrington/a-fool-proof-way-to-keep-your-fork-caught-up-in-git-2e2e
+  https://letsbuild.gg/jacobherrington/a-fool-proof-way-to-keep-your-fork-caught-up-in-git-2e2e

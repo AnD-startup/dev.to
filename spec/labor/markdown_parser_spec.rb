@@ -151,7 +151,7 @@ RSpec.describe MarkdownParser, type: :labor do
     end
 
     it "works with markdown heavy contents" do
-      mention = "test **[link?](https://dev.to/ben/)** thread, @#{user.username} talks :"
+      mention = "test **[link?](https://letsbuild.gg/ben/)** thread, @#{user.username} talks :"
       result = generate_and_parse_markdown(mention)
       expect(result).to include "<a class=\"comment-mentioned-user\""
     end

@@ -20,20 +20,20 @@ RSpec.describe URL, type: :lib do
 
   describe ".url" do
     it "creates the correct base app URL" do
-      expect(described_class.url).to eq("https://dev.to")
+      expect(described_class.url).to eq("https://letsbuild.gg")
     end
 
     it "creates a URL with a path" do
-      expect(described_class.url("internal")).to eq("https://dev.to/internal")
+      expect(described_class.url("internal")).to eq("https://letsbuild.gg/internal")
     end
 
     it "creates the correct URL even if the path starts with a slash" do
-      expect(described_class.url("/internal")).to eq("https://dev.to/internal")
+      expect(described_class.url("/internal")).to eq("https://letsbuild.gg/internal")
     end
 
     it "works when called with an URI object" do
       uri = URI::Generic.build(path: "internal", fragment: "test")
-      expect(described_class.url(uri)).to eq("https://dev.to/internal#test")
+      expect(described_class.url(uri)).to eq("https://letsbuild.gg/internal#test")
     end
   end
 
@@ -41,7 +41,7 @@ RSpec.describe URL, type: :lib do
     let(:article) { build(:article, path: "/username1/slug") }
 
     it "returns the correct URL for an article" do
-      expect(described_class.article(article)).to eq("https://dev.to#{article.path}")
+      expect(described_class.article(article)).to eq("https://letsbuild.gg#{article.path}")
     end
   end
 
@@ -49,7 +49,7 @@ RSpec.describe URL, type: :lib do
     let(:comment) { build(:comment) }
 
     it "returns the correct URL for a comment" do
-      expect(described_class.comment(comment)).to eq("https://dev.to#{comment.path}")
+      expect(described_class.comment(comment)).to eq("https://letsbuild.gg#{comment.path}")
     end
   end
 
@@ -57,13 +57,13 @@ RSpec.describe URL, type: :lib do
     it "returns the correct URL for an article's reaction" do
       article = build(:article, path: "/username1/slug")
       reaction = build(:reaction, reactable: article)
-      expect(described_class.reaction(reaction)).to eq("https://dev.to#{article.path}")
+      expect(described_class.reaction(reaction)).to eq("https://letsbuild.gg#{article.path}")
     end
 
     it "returns the correct URL for a comment's reaction" do
       comment = build(:comment)
       reaction = build(:reaction, reactable: comment)
-      expect(described_class.reaction(reaction)).to eq("https://dev.to#{comment.path}")
+      expect(described_class.reaction(reaction)).to eq("https://letsbuild.gg#{comment.path}")
     end
   end
 
@@ -71,7 +71,7 @@ RSpec.describe URL, type: :lib do
     let(:user) { build(:user) }
 
     it "returns the correct URL for a user" do
-      expect(described_class.user(user)).to eq("https://dev.to/#{user.username}")
+      expect(described_class.user(user)).to eq("https://letsbuild.gg/#{user.username}")
     end
   end
 
@@ -79,7 +79,7 @@ RSpec.describe URL, type: :lib do
     let(:organization) { build(:organization) }
 
     it "returns the correct URL for a user" do
-      expect(described_class.user(organization)).to eq("https://dev.to/#{organization.slug}")
+      expect(described_class.user(organization)).to eq("https://letsbuild.gg/#{organization.slug}")
     end
   end
 

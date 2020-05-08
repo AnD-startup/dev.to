@@ -77,20 +77,20 @@ RSpec.describe ApplicationHelper, type: :helper do
     end
 
     it "creates the correct base app URL" do
-      expect(app_url).to eq("https://dev.to")
+      expect(app_url).to eq("https://letsbuild.gg")
     end
 
     it "creates a URL with a path" do
-      expect(app_url("internal")).to eq("https://dev.to/internal")
+      expect(app_url("internal")).to eq("https://letsbuild.gg/internal")
     end
 
     it "creates the correct URL even if the path starts with a slash" do
-      expect(app_url("/internal")).to eq("https://dev.to/internal")
+      expect(app_url("/internal")).to eq("https://letsbuild.gg/internal")
     end
 
     it "works when called with an URI object" do
       uri = URI::Generic.build(path: "internal", fragment: "test")
-      expect(app_url(uri)).to eq("https://dev.to/internal#test")
+      expect(app_url(uri)).to eq("https://letsbuild.gg/internal#test")
     end
   end
 

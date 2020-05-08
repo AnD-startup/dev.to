@@ -14,7 +14,7 @@ RSpec.describe "feedback_messages", type: :request do
       feedback_message: {
         feedback_type: "abuse-reports",
         category: "rude or vulgar",
-        reported_url: "https://dev.to",
+        reported_url: "https://letsbuild.gg",
         message: "this was vulgar"
       }
     }

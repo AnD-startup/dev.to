@@ -5,5 +5,5 @@
    <Tags>software development</Tags>
    <Contact>support@letsbuild.gg</Contact>
    <Url type="text/html" 
-        template="https://dev.to/search?q={searchTerms}"/>
+        template="https://letsbuild.gg/search?q={searchTerms}"/>
  </OpenSearchDescription>

@@ -51,7 +51,7 @@ class DropdownMenu extends Component {
       : document.removeEventListener('mousedown', this.handleClickOutside);
   };
 
-  handleClickOutside = e => {
+  handleClickOutside = (e) => {
     if (
       this.componentRef.current &&
       !this.componentRef.current.contains(e.target)
@@ -65,7 +65,7 @@ class DropdownMenu extends Component {
     const { isOpen } = this.state;
     const { id, category, slug } = listing;
     const editUrl = `/listings/${id}/edit`;
-    const reportUrl = `/report-abuse?url=https://dev.to/listings/${category}/${slug}`;
+    const reportUrl = `/report-abuse?url=https://letsbuild.gg/listings/${category}/${slug}`;
 
     return (
       <div className="dropdown-menu" ref={this.componentRef}>

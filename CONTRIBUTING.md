@@ -14,9 +14,9 @@
 ## Contributing
 
 We expect contributors to abide by our underlying
-[code of conduct](https://dev.to/code-of-conduct). All conversations and
+[code of conduct](https://letsbuild.gg/code-of-conduct). All conversations and
 discussions on GitHub (issues, pull requests) and across
-[https://dev.to](dev.to) must be respectful and harassment-free.
+[https://letsbuild.gg](dev.to) must be respectful and harassment-free.
 
 Remember that communication is the lifeblood of any Open Source project. We are
 all working on this together, and we are all benefiting from this software. It's
@@ -26,7 +26,7 @@ project has the best intentions.
 
 If you feel another member of the community has violated our Code of Conduct,
 you may anonymously contact the team with our
-[abuse report form](https://dev.to/report-abuse).
+[abuse report form](https://letsbuild.gg/report-abuse).
 
 ### Where to contribute
 
@@ -120,10 +120,10 @@ score.
 ### Please use inclusive language
 
 Inclusion and respect are core tenents of our
-[code of conduct](https://dev.to/code-of-conduct) and we encourage thoughtful
-language all the way down to the code. Some coding metaphors are alienating or
-triggering and we ask that contributors go the extra mile to submit code which
-is inclusive in nature.
+[code of conduct](https://letsbuild.gg/code-of-conduct) and we encourage
+thoughtful language all the way down to the code. Some coding metaphors are
+alienating or triggering and we ask that contributors go the extra mile to
+submit code which is inclusive in nature.
 
 If you unintentionally include language deemed harmful, there is no shame. We
 will simply work together to settle on an alternative we are all comfortable
