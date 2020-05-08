@@ -400,7 +400,6 @@ class User < ApplicationRecord
     %w[
       Profile
       UX
-      Integrations
       Notifications
       Publishing\ from\ RSS
       Organization
