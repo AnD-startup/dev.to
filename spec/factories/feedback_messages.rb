@@ -14,7 +14,7 @@ FactoryBot.define do
     feedback_type { "abuse-reports" }
     message { "this is spam" }
     category { "spam" }
-    reported_url { "https://dev.to" }
+    reported_url { "https://letsbuild.gg" }
     status { "Open" }
   end
 

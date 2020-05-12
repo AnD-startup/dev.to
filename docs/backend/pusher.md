@@ -5,7 +5,7 @@ title: Pusher
 # Pusher for Realtime Notifications
 
 Pusher is a third party service being used to power the
-[chat system](https://dev.to/connect) and Push Notifications on
+[chat system](https://letsbuild.gg/connect) and Push Notifications on
 [iOS](https://apps.apple.com/us/app/dev-community/id1439094790) &
 [Android](https://play.google.com/store/apps/details?id=to.dev.dev_android)
 native apps.

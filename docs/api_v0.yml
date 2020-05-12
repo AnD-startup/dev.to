@@ -17,7 +17,7 @@ info:
   termsOfService: https://letsbuild.gg/terms
   contact:
     name: LetsBuild.gg Team
-    url: https://dev.to/contact
+    url: https://letsbuild.gg/contact
     email: support@letsbuild.gg
   x-logo:
     url: https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-128-1a9016906487b8ba17f2d3d3c28f9d1cb3ae9b45d685cc2711e20f6b3c6730df.png
@@ -25,7 +25,7 @@ info:
     altText: "LetsBuild.gg logo"
 
 servers:
-  - url: https://dev.to/api
+  - url: https://letsbuild.gg/api
     description: Production server
 
 components:
@@ -98,7 +98,7 @@ components:
 
         To obtain one, please follow these steps:
 
-          - visit https://dev.to/settings/account
+          - visit https://letsbuild.gg/settings/account
           - in the "LetsBuild.gg API Keys" section create a new key by adding a
             description and clicking on "Generate API Key"
 
@@ -115,13 +115,13 @@ components:
         OAuth2 authentication is still in private alpha.
       flows:
         authorizationCode:
-          authorizationUrl: https://dev.to/oauth/authorize
-          tokenUrl: https://dev.to/oauth/token
-          refreshUrl: https://dev.to/oauth/token
+          authorizationUrl: https://letsbuild.gg/oauth/authorize
+          tokenUrl: https://letsbuild.gg/oauth/token
+          refreshUrl: https://letsbuild.gg/oauth/token
           scopes: {}
         clientCredentials:
-          tokenUrl: https://dev.to/oauth/token
-          refreshUrl: https://dev.to/oauth/token
+          tokenUrl: https://letsbuild.gg/oauth/token
+          refreshUrl: https://letsbuild.gg/oauth/token
           scopes: {}
 
   schemas:
@@ -1053,8 +1053,8 @@ components:
           tags: meta, changelog, css, ux
           slug: there-s-a-new-dev-theme-in-town-for-all-you-10x-hackers-out-there-plus-one-actually-useful-new-feature-2kgk
           path: "/devteam/there-s-a-new-dev-theme-in-town-for-all-you-10x-hackers-out-there-plus-one-actually-useful-new-feature-2kgk"
-          url: https://dev.to/devteam/there-s-a-new-dev-theme-in-town-for-all-you-10x-hackers-out-there-plus-one-actually-useful-new-feature-2kgk
-          canonical_url: https://dev.to/devteam/there-s-a-new-dev-theme-in-town-for-all-you-10x-hackers-out-there-plus-one-actually-useful-new-feature-2kgk
+          url: https://letsbuild.gg/devteam/there-s-a-new-dev-theme-in-town-for-all-you-10x-hackers-out-there-plus-one-actually-useful-new-feature-2kgk
+          canonical_url: https://letsbuild.gg/devteam/there-s-a-new-dev-theme-in-town-for-all-you-10x-hackers-out-there-plus-one-actually-useful-new-feature-2kgk
           comments_count: 37
           positive_reactions_count: 142
           collection_id:
@@ -1096,8 +1096,8 @@ components:
           - history
         slug: byte-sized-episode-2-the-creation-of-graph-theory-34g1
         path: "/bytesized/byte-sized-episode-2-the-creation-of-graph-theory-34g1"
-        url: https://dev.to/bytesized/byte-sized-episode-2-the-creation-of-graph-theory-34g1
-        canonical_url: https://dev.to/bytesized/byte-sized-episode-2-the-creation-of-graph-theory-34g1
+        url: https://letsbuild.gg/bytesized/byte-sized-episode-2-the-creation-of-graph-theory-34g1
+        canonical_url: https://letsbuild.gg/bytesized/byte-sized-episode-2-the-creation-of-graph-theory-34g1
         comments_count: 21
         positive_reactions_count: 322
         collection_id: 1693
@@ -1667,11 +1667,11 @@ paths:
         - lang: Shell
           label: curl (all articles)
           source: |
-            curl https://dev.to/api/articles
+            curl https://letsbuild.gg/api/articles
         - lang: Shell
           label: curl (user's articles)
           source: |
-            curl https://dev.to/api/articles?username=ben
+            curl https://letsbuild.gg/api/articles?username=ben
     post:
       operationId: createArticle
       summary: Create a new article
@@ -1773,14 +1773,14 @@ paths:
             curl -X POST -H "Content-Type: application/json" \
               -H "api-key: API_KEY" \
               -d '{"article":{"title":"Title","body_markdown":"Body","published":false,"tags":["discuss", "javascript"]}}' \
-              https://dev.to/api/articles
+              https://letsbuild.gg/api/articles
         - lang: Shell
           label: curl (with front matter)
           source: |
             curl -X POST -H "Content-Type: application/json" \
             -H "api-key: API_KEY" \
             -d '{"article":{"body_markdown":"---\ntitle:A sample article about...\npublished:false\n---\n..."}}' \
-            https://dev.to/api/articles
+            https://letsbuild.gg/api/articles
 
   /articles/{id}:
     parameters:
@@ -1824,7 +1824,7 @@ paths:
         - lang: Shell
           label: curl
           source: |
-            curl https://dev.to/api/articles/150589
+            curl https://letsbuild.gg/api/articles/150589
     put:
       operationId: updateArticle
       summary: Update an article
@@ -1925,7 +1925,7 @@ paths:
             curl -X PUT -H "Content-Type: application/json" \
               -H "api-key: API_KEY" \
               -d '{"article":{"title":"Title"}}' \
-              https://dev.to/api/articles/{id}
+              https://letsbuild.gg/api/articles/{id}
 
   /articles/me:
     get:
@@ -1974,7 +1974,7 @@ paths:
         - lang: Shell
           label: curl
           source: |
-            curl -H "api-key: API_KEY" https://dev.to/api/articles/me
+            curl -H "api-key: API_KEY" https://letsbuild.gg/api/articles/me
 
   /articles/me/published:
     get:
@@ -2023,7 +2023,7 @@ paths:
         - lang: Shell
           label: curl
           source: |
-            curl -H "api-key: API_KEY" https://dev.to/api/articles/me/published
+            curl -H "api-key: API_KEY" https://letsbuild.gg/api/articles/me/published
 
   /articles/me/unpublished:
     get:
@@ -2072,7 +2072,7 @@ paths:
         - lang: Shell
           label: curl
           source: |
-            curl -H "api-key: API_KEY" https://dev.to/api/articles/me/unpublished
+            curl -H "api-key: API_KEY" https://letsbuild.gg/api/articles/me/unpublished
 
   /articles/me/all:
     get:
@@ -2123,7 +2123,7 @@ paths:
         - lang: Shell
           label: curl
           source: |
-            curl -H "api-key: API_KEY" https://dev.to/api/articles/me/all
+            curl -H "api-key: API_KEY" https://letsbuild.gg/api/articles/me/all
 
   /comments:
     get:
@@ -2175,7 +2175,7 @@ paths:
         - lang: Shell
           label: curl (all comments of an article)
           source: |
-            curl https://dev.to/api/comments?a_id=270180
+            curl https://letsbuild.gg/api/comments?a_id=270180
 
   /comments/{id}:
     get:
@@ -2226,7 +2226,7 @@ paths:
         - lang: Shell
           label: curl (a comment and its descendants)
           source: |
-            curl https://dev.to/api/comments/m51e
+            curl https://letsbuild.gg/api/comments/m51e
 
   /followers/users:
     get:
@@ -2272,7 +2272,7 @@ paths:
         - lang: Shell
           label: curl
           source: |
-            curl -H "api-key: API_KEY" https://dev.to/api/followers/users
+            curl -H "api-key: API_KEY" https://letsbuild.gg/api/followers/users
 
   /listings:
     get:
@@ -2318,7 +2318,7 @@ paths:
         - lang: Shell
           label: curl (all listings)
           source: |
-            curl https://dev.to/api/listings
+            curl https://letsbuild.gg/api/listings
     post:
       operationId: createListing
       summary: Create a new listing
@@ -2406,21 +2406,21 @@ paths:
             curl -X POST -H "Content-Type: application/json" \
               -H "api-key: API_KEY" \
               -d '{"classified_listing":{"title":"Title","body_markdown":"Body","category":"cfp"}}' \
-              https://dev.to/api/listings
+              https://letsbuild.gg/api/listings
         - lang: Shell
           label: curl (with tags)
           source: |
             curl -X POST -H "Content-Type: application/json" \
               -H "api-key: API_KEY" \
               -d '{"classified_listing":{"title":"Title","body_markdown":"Body","category":"cfp","tags":["python"]}}' \
-              https://dev.to/api/listings
+              https://letsbuild.gg/api/listings
         - lang: Shell
           label: curl (draft)
           source: |
             curl -X POST -H "Content-Type: application/json" \
               -H "api-key: API_KEY" \
               -d '{"classified_listing":{"title":"Title","body_markdown":"Body","category":"cfp","action":"draft"}}' \
-              https://dev.to/api/listings
+              https://letsbuild.gg/api/listings
 
   /listings/category/{category}:
     get:
@@ -2465,7 +2465,7 @@ paths:
         - lang: Shell
           label: curl (call for papers listings)
           source: |
-            curl https://dev.to/api/listings/category/cfp
+            curl https://letsbuild.gg/api/listings/category/cfp
 
   /listings/{id}:
     parameters:
@@ -2515,11 +2515,11 @@ paths:
         - lang: Shell
           label: curl
           source: |
-            curl https://dev.to/api/listings/1184
+            curl https://letsbuild.gg/api/listings/1184
         - lang: Shell
           label: curl (with authentication)
           source: |
-            curl -H "api-key: API_KEY" https://dev.to/api/listings/1185
+            curl -H "api-key: API_KEY" https://letsbuild.gg/api/listings/1185
     put:
       operationId: updateListing
       summary: Update a listing
@@ -2605,14 +2605,14 @@ paths:
             curl -X PUT -H "Content-Type: application/json" \
               -H "api-key: API_KEY" \
               -d '{"classified_listing":{"action":"bump"}' \
-              https://dev.to/api/listings/{id}
+              https://letsbuild.gg/api/listings/{id}
         - lang: Shell
           label: curl (update)
           source: |
             curl -X PUT -H "Content-Type: application/json" \
               -H "api-key: API_KEY" \
               -d '{"classified_listing":{"title":"Title"}' \
-              https://dev.to/api/listings/{id}
+              https://letsbuild.gg/api/listings/{id}
 
   /podcast_episodes:
     get:
@@ -2666,11 +2666,11 @@ paths:
         - lang: Shell
           label: curl (all podcast episodes)
           source: |
-            curl https://dev.to/api/podcast_episodes
+            curl https://letsbuild.gg/api/podcast_episodes
         - lang: Shell
           label: curl (all episodes belonging to a podcast)
           source: |
-            curl https://dev.to/api/podcast_episodes?username=codenewbie
+            curl https://letsbuild.gg/api/podcast_episodes?username=codenewbie
 
   /tags:
     get:
@@ -2704,7 +2704,7 @@ paths:
         - lang: Shell
           label: curl (all tags)
           source: |
-            curl https://dev.to/api/tags
+            curl https://letsbuild.gg/api/tags
 
   /users/{id}:
     get:
@@ -2758,11 +2758,11 @@ paths:
         - lang: Shell
           label: curl (by id)
           source: |
-            curl https://dev.to/api/users/1
+            curl https://letsbuild.gg/api/users/1
         - lang: Shell
           label: curl (by username)
           source: |
-            curl https://dev.to/api/users/by_username?url=ben
+            curl https://letsbuild.gg/api/users/by_username?url=ben
 
   /users/me:
     get:
@@ -2799,7 +2799,7 @@ paths:
         - lang: Shell
           label: curl
           source: |
-            curl -H "api-key: API_KEY" https://dev.to/api/users/me
+            curl -H "api-key: API_KEY" https://letsbuild.gg/api/users/me
 
   /videos:
     get:
@@ -2835,7 +2835,7 @@ paths:
         - lang: Shell
           label: curl (all video articles)
           source: |
-            curl https://dev.to/api/videos
+            curl https://letsbuild.gg/api/videos
 
   /webhooks:
     get:
@@ -2887,7 +2887,7 @@ paths:
         - lang: Shell
           label: curl
           source: |
-            curl -H "api-key: API_KEY" https://dev.to/api/webhooks
+            curl -H "api-key: API_KEY" https://letsbuild.gg/api/webhooks
     post:
       operationId: createWebhook
       summary: Create a new webhook
@@ -2955,7 +2955,7 @@ paths:
             curl -X POST -H "Content-Type: application/json" \
               -H "api-key: API_KEY" \
               -d '{"webhook_endpoint":{"target_url":"https://example.org/webhooks/webhook1","source":"LetsBuild.gg","events":["article_created"]}}' \
-              https://dev.to/api/webhooks
+              https://letsbuild.gg/api/webhooks
 
   /webhooks/{id}:
     parameters:
@@ -3011,7 +3011,7 @@ paths:
         - lang: Shell
           label: curl
           source: |
-            curl https://dev.to/api/webhooks/123
+            curl https://letsbuild.gg/api/webhooks/123
     delete:
       operationId: deleteWebhook
       summary: A webhook endpoint
@@ -3050,4 +3050,4 @@ paths:
           source: |
             curl -X DELETE \
               -H "api-key: API_KEY" \
-              https://dev.to/api/webhooks/1
+              https://letsbuild.gg/api/webhooks/1

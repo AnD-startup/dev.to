@@ -1,4 +1,4 @@
-'use strict';
+
 
 /* eslint-disable-next-line no-console */
 console.log(`
@@ -20,5 +20,5 @@ Hey there! Interested in the code behind dev.to? Well, you're in luck - we're op
 
 Come say hi, tell us what you're debugging, or even lend a hand in our repo: https://github.com/thepracticaldev/dev.to
 
-Did you find a bug or vulnerability? Check out our bug bounty info here: https://dev.to/security
+Did you find a bug or vulnerability? Check out our bug bounty info here: https://letsbuild.gg/security
 `);

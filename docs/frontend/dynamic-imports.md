@@ -29,6 +29,6 @@ only do we end up loading code only when we need it, we also end up with smaller
 bundle sizes in the frontend.
 
 For a great deep dive into dynamic imports, there is a great article from
-community member [@goenning](https://dev.to/goenning) about dynamic import
+community member [@goenning](https://letsbuild.gg/goenning) about dynamic import
 usage,
-[How we reduced our initial JS/CSS size by 67%](https://dev.to/goenning/how-we-reduced-our-initial-jscss-size-by-67-3ac0).
+[How we reduced our initial JS/CSS size by 67%](https://letsbuild.gg/goenning/how-we-reduced-our-initial-jscss-size-by-67-3ac0).

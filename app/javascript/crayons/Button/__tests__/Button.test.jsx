@@ -81,7 +81,7 @@ describe('<Button /> component', () => {
 
   it('should render a button as an anchor element if "tagName" is set to "a"', () => {
     const tree = render(
-      <Button tagName="a" url="https://dev.to">
+      <Button tagName="a" url="https://letsbuild.gg">
         Hello world!
       </Button>,
     );

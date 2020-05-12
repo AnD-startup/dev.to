@@ -35,9 +35,9 @@ class SiteConfig < RailsSettings::Base
   # Emails
   field :email_addresses, type: :hash, default: {
     default: "support@letsbuild.gg",
-    business: "partners@dev.to",
-    privacy: "privacy@dev.to",
-    members: "members@dev.to"
+    business: "support@letsbuild.to",
+    privacy: "support@letsbuild.to",
+    members: "support@letsbuild.to"
   }
 
   # Meta keywords
@@ -60,16 +60,16 @@ class SiteConfig < RailsSettings::Base
   field :campaign_sidebar_image, type: :string, default: nil
 
   # Onboarding
-  field :onboarding_taskcard_image, type: :string, default: "https://practicaldev-herokuapp-com.freetls.fastly.net/assets/staggered-dev.svg"
-  field :suggested_tags, type: :array, default: %w[beginners career computerscience javascript security ruby rails swift kotlin]
-  field :suggested_users, type: :array, default: %w[ben jess peter maestromac andy liana]
+  field :onboarding_taskcard_image, type: :string, default: "/assets/logoinvert.svg"
+  field :suggested_tags, type: :array, default: %w[indiedev unity unreal gamemaker pixelart 3d 2d roguelike platformer]
+  field :suggested_users, type: :array, default: %w[robert chris ryan]
 
   # Images
-  field :main_social_image, type: :string, default: "https://thepracticaldev.s3.amazonaws.com/i/6hqmcjaxbgbon8ydw93z.png"
-  field :favicon_url, type: :string, default: "favicon.ico"
-  field :logo_png, type: :string, default: "https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-512.png"
+  field :main_social_image, type: :string, default: "/assets/1500x500.jpg"
+  field :favicon_url, type: :string, default: "favicon.png"
+  field :logo_png, type: :string, default: "/assets/500x500.jpg"
   field :logo_svg, type: :string, default: ""
-  field :primary_sticker_image_url, type: :string, default: "https://practicaldev-herokuapp-com.freetls.fastly.net/assets/rainbowdev.svg"
+  field :primary_sticker_image_url, type: :string, default: "/assets/logo.svg"
 
   # Rate Limits
   field :rate_limit_follow_count_daily, type: :integer, default: 500
@@ -104,5 +104,5 @@ class SiteConfig < RailsSettings::Base
   field :sidebar_tags, type: :array, default: %w[help challenge discuss explainlikeimfive meta watercooler]
 
   # Shop
-  field :shop_url, type: :string, default: "https://shop.dev.to"
+  field :shop_url, type: :string, default: ""
 end

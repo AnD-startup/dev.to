@@ -39,4 +39,4 @@ platform.
 The long-term benefits of doing this the right way far outweigh the short-term
 gains of spinning something up without consulting us. If you are interested in
 getting started with this process, let us know in
-[this thread](https://dev.to/ben/so-you-want-to-stand-up-your-own-instance-of-dev-help-thread-1elo).
+[this thread](https://letsbuild.gg/ben/so-you-want-to-stand-up-your-own-instance-of-dev-help-thread-1elo).

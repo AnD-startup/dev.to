@@ -32,7 +32,7 @@ preact-render-spy (1 nodes)
         </button>
         <div class="dropdown">
           <div class="dropdown-content ">
-            <a href="/report-abuse?url=https://dev.to/listings/misc/illo-iure-quos-perspiciatis-5hk7">Report Abuse</a>
+            <a href="/report-abuse?url=https://letsbuild.gg/listings/misc/illo-iure-quos-perspiciatis-5hk7">Report Abuse</a>
           </div>
         </div>
       </div>

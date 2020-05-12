@@ -27,7 +27,7 @@ class GeneratedImage
   end
 
   def cloudinary_generated_url(path)
-    cl_image_path("https://dev.to/social_previews#{path}",
+    cl_image_path("https://letsbuild.gg/social_previews#{path}",
                   gravity: "north",
                   height: 400,
                   width: 800,

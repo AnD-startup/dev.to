@@ -186,9 +186,9 @@ module ApplicationHelper
   # @note Uses protocol and domain specified in the environment, ensure they are set.
   # @param uri [URI, String] parts we want to merge into the URL, e.g. path, fragment
   # @example Retrieve the base URL
-  #  app_url #=> "https://dev.to"
+  #  app_url #=> "https://letsbuild.gg"
   # @example Add a path
-  #  app_url("internal") #=> "https://dev.to/internal"
+  #  app_url("internal") #=> "https://letsbuild.gg/internal"
   def app_url(uri = nil)
     URL.url(uri)
   end
