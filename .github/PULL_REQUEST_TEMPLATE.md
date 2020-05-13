@@ -6,8 +6,8 @@
      commits if your PR already received reviews or comments.
 
      Before submitting a Pull Request, please ensure you've done the following:
-     - 📖 Read the LetsBuild.gg Contributing Guide: https://github.com/thepracticaldev/dev.to/blob/master/CONTRIBUTING.md#create-a-pull-request.
-     - 📖 Read the LetsBuild.gg Code of Conduct: https://github.com/thepracticaldev/dev.to/blob/master/CODE_OF_CONDUCT.md.
+     - 📖 Read the LetsBuild.gg Contributing Guide: https://github.com/letsbuildgg/dev.to/blob/master/CONTRIBUTING.md#create-a-pull-request.
+     - 📖 Read the LetsBuild.gg Code of Conduct: https://github.com/letsbuildgg/dev.to/blob/master/CODE_OF_CONDUCT.md.
      - 👷‍♀️ Create small PRs. In most cases this will be possible.
      - ✅ Provide tests for your changes.
      - 📝 Use descriptive commit messages.

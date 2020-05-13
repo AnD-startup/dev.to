@@ -169,7 +169,7 @@
           <div class="form-group">
             <textarea rows="5" wrap="hard" name="tweet" maxlength="255" class="form-control"><%= BufferUpdate.twitter_default_text(article) %></textarea>
           </div>
-          <button class="btn btn-primary mb-2">🦅 Tweet to @<%= SiteConfig.social_media_handles["twitter"] %></button>
+          <button class="btn btn-primary mb-2">🦅 Tweet to @<%= SiteConfig.social_media_handles[:twitter] %></button>
           <% end %>
 
           <% if (article.decorate.cached_tag_list_array & Tag.bufferized_tags).any? %>
