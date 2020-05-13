@@ -22,6 +22,11 @@
     "test": "jest app/javascript/ --coverage",
     "test:watch": "jest app/javascript/ --watch"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
     "app/assets/config/manifest.js": [
       "prettier --write",
