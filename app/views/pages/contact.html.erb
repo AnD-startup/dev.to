@@ -2,19 +2,19 @@
 
 <%= content_for :page_meta do %>
   <link rel="canonical" href="<%= app_url("/contact") %>" />
-  <meta name="description" content="Contact <%=community_qualified_name%>">
+  <meta name="description" content="Contact <%= community_qualified_name %>">
   <meta name="keywords" content="<%= SiteConfig.meta_keywords[:default] %>">
 
   <meta property="og:type" content="article" />
   <meta property="og:url" content="<%= app_url("/contact") %>" />
-  <meta property="og:title" content="Contact <%=community_qualified_name%>" />
+  <meta property="og:title" content="Contact <%= community_qualified_name %>" />
   <meta property="og:image" content="<%= SiteConfig.main_social_image %>" />
   <meta property="og:description" content="<%= community_qualified_name %> is great!" />
   <meta property="og:site_name" content="<%= community_qualified_name %>" />
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@<%= SiteConfig.social_media_handles[:twitter] %>">
-  <meta name="twitter:title" content="Contact <%=community_qualified_name%>">
+  <meta name="twitter:title" content="Contact <%= community_qualified_name %>">
   <meta name="twitter:description" content="<%= community_qualified_name %> is great!">
   <meta name="twitter:image:src" content="<%= SiteConfig.main_social_image %>">
 <% end %>
@@ -35,23 +35,6 @@
     <p>
       Twitter: <a href="http://twitter.com/<%= SiteConfig.social_media_handles[:twitter] %>">@<%= SiteConfig.social_media_handles[:twitter] %></a> 👻
     </p>
-    <% SiteConfig.social_media_handles.keys.each do |social_media_type| %>
-  <% if SiteConfig.social_media_handles[social_media_type].present? %>
-    <p>
-    <%=social_media_type%>
-    <%=social_media_type.class%>
-    <%= SiteConfig.social_media_handles[:twitter] %>
-    <%= SiteConfig.social_media_handles[:twitter] %>
-    <a
-      href="<%= "https://#{social_media_type}.com/#{SiteConfig.social_media_handles[social_media_type]}" %>"
-      target="_blank"
-      class="crayons-link crayons-link--secondary mx-2"
-      rel="noopener">
-      <%= inline_svg_tag("#{social_media_type}.svg", aria: true, title: social_media_type.capitalize, class: "crayons-icon social-media-svg") %>
-    </a>
-    </p>
-  <% end %>
-<% end %>
     <%# <p>
       Report a vulnerability: <a href="https://letsbuild.gg/security">letsbuilg.gg/security</a> 🐛
     </p> %>
