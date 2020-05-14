@@ -336,7 +336,7 @@ preact-render-spy (1 nodes)
     <div class="onboarding-content">
       <figure>
         <img
-          src="/assets/purple-dev-logo.png"
+          src="/assets/logo.png"
           class="sticker-logo"
           alt="LetsBuild.gg"
          />

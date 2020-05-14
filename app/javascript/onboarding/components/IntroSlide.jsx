@@ -96,7 +96,7 @@ class IntroSlide extends Component {
         <div className="onboarding-content">
           <figure>
             <img
-              src="/assets/purple-dev-logo.png"
+              src="/assets/logo.png"
               className="sticker-logo"
               alt="LetsBuild.gg"
             />
@@ -107,7 +107,7 @@ class IntroSlide extends Component {
             &mdash; welcome to LetsBuild.gg!
           </h1>
           <h2 className="introduction-subtitle">
-            LetsBuild.gg is where programmers share ideas and help each other
+            LetsBuild.gg is where indie devs share ideas and help each other
             grow.
           </h2>
         </div>
