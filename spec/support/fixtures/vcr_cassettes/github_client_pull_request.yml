@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.github.com/repos/thepracticaldev/dev.to/issues/7653
+    uri: https://api.github.com/repos/letsbuildgg/dev.to/issues/7653
     body:
       encoding: US-ASCII
       string: ''
@@ -71,10 +71,10 @@ http_interactions:
       - F3AA:4B32:24AC63:32E837:5EAE0842
     body:
       encoding: ASCII-8BIT
-      string: '{"url":"https://api.github.com/repos/thepracticaldev/dev.to/issues/7653","repository_url":"https://api.github.com/repos/thepracticaldev/dev.to","labels_url":"https://api.github.com/repos/thepracticaldev/dev.to/issues/7653/labels{/name}","comments_url":"https://api.github.com/repos/thepracticaldev/dev.to/issues/7653/comments","events_url":"https://api.github.com/repos/thepracticaldev/dev.to/issues/7653/events","html_url":"https://github.com/thepracticaldev/dev.to/pull/7653","id":610931120,"node_id":"MDExOlB1bGxSZXF1ZXN0NDEyMjcxMzIy","number":7653,"title":"Log
-        RateLimit hits to Datadog for Better Reporting","user":{"login":"mstruve","id":1813380,"node_id":"MDQ6VXNlcjE4MTMzODA=","avatar_url":"https://avatars3.githubusercontent.com/u/1813380?v=4","gravatar_id":"","url":"https://api.github.com/users/mstruve","html_url":"https://github.com/mstruve","followers_url":"https://api.github.com/users/mstruve/followers","following_url":"https://api.github.com/users/mstruve/following{/other_user}","gists_url":"https://api.github.com/users/mstruve/gists{/gist_id}","starred_url":"https://api.github.com/users/mstruve/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/mstruve/subscriptions","organizations_url":"https://api.github.com/users/mstruve/orgs","repos_url":"https://api.github.com/users/mstruve/repos","events_url":"https://api.github.com/users/mstruve/events{/privacy}","received_events_url":"https://api.github.com/users/mstruve/received_events","type":"User","site_admin":false},"labels":[{"id":1123882148,"node_id":"MDU6TGFiZWwxMTIzODgyMTQ4","url":"https://api.github.com/repos/thepracticaldev/dev.to/labels/PR:%20merged","name":"PR:
+      string: '{"url":"https://api.github.com/repos/letsbuildgg/dev.to/issues/7653","repository_url":"https://api.github.com/repos/letsbuildgg/dev.to","labels_url":"https://api.github.com/repos/letsbuildgg/dev.to/issues/7653/labels{/name}","comments_url":"https://api.github.com/repos/letsbuildgg/dev.to/issues/7653/comments","events_url":"https://api.github.com/repos/letsbuildgg/dev.to/issues/7653/events","html_url":"https://github.com/letsbuildgg/dev.to/pull/7653","id":610931120,"node_id":"MDExOlB1bGxSZXF1ZXN0NDEyMjcxMzIy","number":7653,"title":"Log
+        RateLimit hits to Datadog for Better Reporting","user":{"login":"mstruve","id":1813380,"node_id":"MDQ6VXNlcjE4MTMzODA=","avatar_url":"https://avatars3.githubusercontent.com/u/1813380?v=4","gravatar_id":"","url":"https://api.github.com/users/mstruve","html_url":"https://github.com/mstruve","followers_url":"https://api.github.com/users/mstruve/followers","following_url":"https://api.github.com/users/mstruve/following{/other_user}","gists_url":"https://api.github.com/users/mstruve/gists{/gist_id}","starred_url":"https://api.github.com/users/mstruve/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/mstruve/subscriptions","organizations_url":"https://api.github.com/users/mstruve/orgs","repos_url":"https://api.github.com/users/mstruve/repos","events_url":"https://api.github.com/users/mstruve/events{/privacy}","received_events_url":"https://api.github.com/users/mstruve/received_events","type":"User","site_admin":false},"labels":[{"id":1123882148,"node_id":"MDU6TGFiZWwxMTIzODgyMTQ4","url":"https://api.github.com/repos/letsbuildgg/dev.to/labels/PR:%20merged","name":"PR:
         merged","color":"786DBE","default":false,"description":"bot applied label
-        for PR''s that are merged"}],"state":"closed","locked":false,"assignee":null,"assignees":[],"milestone":null,"comments":2,"created_at":"2020-05-01T19:40:23Z","updated_at":"2020-05-01T21:47:35Z","closed_at":"2020-05-01T21:47:32Z","author_association":"COLLABORATOR","pull_request":{"url":"https://api.github.com/repos/thepracticaldev/dev.to/pulls/7653","html_url":"https://github.com/thepracticaldev/dev.to/pull/7653","diff_url":"https://github.com/thepracticaldev/dev.to/pull/7653.diff","patch_url":"https://github.com/thepracticaldev/dev.to/pull/7653.patch"},"body":"\r\n##
+        for PR''s that are merged"}],"state":"closed","locked":false,"assignee":null,"assignees":[],"milestone":null,"comments":2,"created_at":"2020-05-01T19:40:23Z","updated_at":"2020-05-01T21:47:35Z","closed_at":"2020-05-01T21:47:32Z","author_association":"COLLABORATOR","pull_request":{"url":"https://api.github.com/repos/letsbuildgg/dev.to/pulls/7653","html_url":"https://github.com/letsbuildgg/dev.to/pull/7653","diff_url":"https://github.com/letsbuildgg/dev.to/pull/7653.diff","patch_url":"https://github.com/letsbuildgg/dev.to/pull/7653.patch"},"body":"\r\n##
         What type of PR is this? (check all applicable)\r\n- [x] Feature\r\n- [x]
         Optimization\r\n\r\n## Description\r\nRather than sending (almost) every single
         rate limit hit to Slack, lets send a metric to Datadog that we can track and
@@ -85,7 +85,7 @@ http_interactions:
         allow us to set thresholds and alert only when users are excessively hitting
         rate limits rather than every single time which sometimes is not concerning
         if they only hit it once, like a pentester trying to see if a rate limiter
-        exists. \r\n\r\n## Related Tickets & Documents\r\nhttps://github.com/thepracticaldev/dev.to/projects/9#card-37397577\r\n\r\n##
+        exists. \r\n\r\n## Related Tickets & Documents\r\nhttps://github.com/letsbuildgg/dev.to/projects/9#card-37397577\r\n\r\n##
         Added tests?\r\n- [x] yes\r\n\r\n![alt_text](https://media1.giphy.com/media/l2YWsOymHDRFYqyAM/giphy.gif)\r\n","closed_by":{"login":"mstruve","id":1813380,"node_id":"MDQ6VXNlcjE4MTMzODA=","avatar_url":"https://avatars3.githubusercontent.com/u/1813380?v=4","gravatar_id":"","url":"https://api.github.com/users/mstruve","html_url":"https://github.com/mstruve","followers_url":"https://api.github.com/users/mstruve/followers","following_url":"https://api.github.com/users/mstruve/following{/other_user}","gists_url":"https://api.github.com/users/mstruve/gists{/gist_id}","starred_url":"https://api.github.com/users/mstruve/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/mstruve/subscriptions","organizations_url":"https://api.github.com/users/mstruve/orgs","repos_url":"https://api.github.com/users/mstruve/repos","events_url":"https://api.github.com/users/mstruve/events{/privacy}","received_events_url":"https://api.github.com/users/mstruve/received_events","type":"User","site_admin":false}}'
     http_version: null
   recorded_at: Sat, 02 May 2020 23:54:43 GMT
@@ -104,7 +104,7 @@ http_interactions:
         our app. \r\n\r\nThis will allow us to set thresholds and alert only when
         users are excessively hitting rate limits rather than every single time which
         sometimes is not concerning if they only hit it once, like a pentester trying
-        to see if a rate limiter exists. \r\n\r\n## Related Tickets & Documents\r\nhttps://github.com/thepracticaldev/dev.to/projects/9#card-37397577\r\n\r\n##
+        to see if a rate limiter exists. \r\n\r\n## Related Tickets & Documents\r\nhttps://github.com/letsbuildgg/dev.to/projects/9#card-37397577\r\n\r\n##
         Added tests?\r\n- [x] yes\r\n\r\n![alt_text](https://media1.giphy.com/media/l2YWsOymHDRFYqyAM/giphy.gif)\r\n"}'
     headers:
       User-Agent:
@@ -177,7 +177,7 @@ http_interactions:
         <p>This will allow us to set thresholds and alert only when users are excessively hitting rate limits rather than every single time which sometimes is not concerning if they only hit it once, like a pentester trying to see if a rate limiter exists.</p>
         <h2>
         <a id="user-content-related-tickets--documents" class="anchor" href="#related-tickets--documents" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Related Tickets &amp; Documents</h2>
-        <p><a href="https://github.com/thepracticaldev/dev.to/projects/9#card-37397577">https://github.com/thepracticaldev/dev.to/projects/9#card-37397577</a></p>
+        <p><a href="https://github.com/letsbuildgg/dev.to/projects/9#card-37397577">https://github.com/letsbuildgg/dev.to/projects/9#card-37397577</a></p>
         <h2>
         <a id="user-content-added-tests" class="anchor" href="#added-tests" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Added tests?</h2>
         <ul>

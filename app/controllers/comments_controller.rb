@@ -107,7 +107,7 @@ class CommentsController < ApplicationController
       message = @comment.errors.full_messages.to_sentence
       render json: { error: message }, status: :unprocessable_entity
     end
-  # See https://github.com/thepracticaldev/dev.to/pull/5485#discussion_r366056925
+  # See https://github.com/letsbuildgg/dev.to/pull/5485#discussion_r366056925
   # for details as to why this is necessary
   rescue Pundit::NotAuthorizedError, RateLimitChecker::LimitReached
     raise

@@ -8,8 +8,8 @@ This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU Affero General Public License as published by the Free
 Software Foundation, either version 3 of the License, or (at your option) any
 later version. Please see the
-[LICENSE](https://github.com/thepracticaldev/dev.to/blob/master/LICENSE.md) file
-in our repository for the full text.
+[LICENSE](https://github.com/letsbuildgg/dev.to/blob/master/LICENSE.md) file in
+our repository for the full text.
 
 Like many open source projects, we require that contributors provide us with a
 Contributor License Agreement (CLA). By submitting code to the LetsBuild.gg

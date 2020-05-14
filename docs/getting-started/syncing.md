@@ -13,7 +13,7 @@ Inside your LetsBuild.gg directory, add a remote to the official LetsBuild.gg
 repo:
 
 ```shell
-git remote add upstream https://github.com/thepracticaldev/dev.to.git
+git remote add upstream https://github.com/letsbuildgg/dev.to.git
 ```
 
 ## Rebasing from upstream

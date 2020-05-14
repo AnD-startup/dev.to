@@ -333,7 +333,7 @@ Rails.application.routes.draw do
   get "/tag-moderation" => "pages#tag_moderation"
 
   # NOTE: can't remove the hardcoded URL here as SiteConfig is not available here, we should eventually
-  # setup dynamic redirects, see <https://github.com/thepracticaldev/dev.to/issues/7267>
+  # setup dynamic redirects, see <https://github.com/letsbuildgg/dev.to/issues/7267>
   get "/shop", to: redirect("https://shop.dev.to")
 
   get "/mod" => "moderations#index", :as => :mod

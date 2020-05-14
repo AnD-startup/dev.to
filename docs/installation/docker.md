@@ -5,7 +5,7 @@ title: Docker
 # Installing LetsBuild.gg with Docker
 
 If you encounter any errors with our Docker setup, please kindly
-[report any issues](https://github.com/thepracticaldev/dev.to/issues/new/choose)!
+[report any issues](https://github.com/letsbuildgg/dev.to/issues/new/choose)!
 
 ## Installing prerequisites
 
@@ -26,7 +26,7 @@ well.
 ## Installing LetsBuild.gg
 
 1. Fork LetsBuild.gg's repository, e.g.
-   <https://github.com/thepracticaldev/dev.to/fork>
+   <https://github.com/letsbuildgg/dev.to/fork>
 1. Clone your forked repository, eg.
    `git clone https://github.com/<your-username>/dev.to.git`
 1. Set up your environment variables/secrets

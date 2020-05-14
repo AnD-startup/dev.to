@@ -24,7 +24,7 @@ RSpec.describe "ArticlesShow", type: :request do
     end
 
     # This is a flakey spec. Due to how we are localizing date times, sometimes
-    # the date is off. See https://github.com/thepracticaldev/dev.to/issues/7086.
+    # the date is off. See https://github.com/letsbuildgg/dev.to/issues/7086.
     xit "renders the proper modified at date" do
       article.update(edited_at: Time.zone.now)
       get article.path

@@ -14,13 +14,13 @@ export default function sendFollowUser(user, successCb) {
     body: formData,
     credentials: 'same-origin',
   })
-    .then(response => response.json())
-    .then(json => {
+    .then((response) => response.json())
+    .then((json) => {
       successCb(json.outcome);
       // json is followed or unfollowed
     })
-    .catch(error => {
-      // TODO: Add client-side error tracking. See https://github.com/thepracticaldev/dev.to/issues/2501
+    .catch((error) => {
+      // TODO: Add client-side error tracking. See https://github.com/letsbuildgg/dev.to/issues/2501
       // for the discussion.
       console.log(error); // eslint-disable-line no-console
     });

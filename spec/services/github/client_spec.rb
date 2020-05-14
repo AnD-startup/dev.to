@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe Github::Client, type: :service, vcr: true do
-  let(:repo) { "thepracticaldev/dev.to" }
+  let(:repo) { "letsbuildgg/dev.to" }
 
   describe ".issue" do
     it "returns a an issue" do

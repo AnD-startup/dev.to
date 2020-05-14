@@ -196,7 +196,7 @@ your local Elasticsearch installation, for example:
 ## Installing LetsBuild.gg
 
 1. Fork LetsBuild.gg's repository, e.g.
-   <https://github.com/thepracticaldev/dev.to/fork>
+   <https://github.com/letsbuildgg/dev.to/fork>
 2. Clone your forked repository in one of two ways:
 
    - e.g. with HTTPS: `git clone https://github.com/<your-username>/dev.to.git`
