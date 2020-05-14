@@ -13,7 +13,7 @@
   <meta property="og:site_name" content="<%= community_qualified_name %>" />
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@<%= SiteConfig.social_media_handles["twitter"] %>">
+  <meta name="twitter:site" content="@<%= SiteConfig.social_media_handles[:twitter] %>">
   <meta name="twitter:title" content="All information about <%= community_qualified_name %>">
   <meta name="twitter:description" content="<%= community_qualified_name %> is great!">
   <meta name="twitter:image:src" content="<%= SiteConfig.main_social_image %>">
@@ -43,17 +43,19 @@
     <ul class="key-links">
       <li><a href="/">Home</a></li>
       <li><a href="/about">About</a></li>
+      <!--
       <% if SiteConfig.shop_url.present? %>
         <li><a href="<%= SiteConfig.shop_url %>"><%= community_name %> Shop</a></li>
       <% end %>
       <li><a href="/sponsors">Sponsors</a></li>
+       -->
       <li><a href="/faq">FAQ</a></li>
       <li><a href="/privacy">Privacy Policy</a></li>
       <li><a href="/terms">Terms of Use</a></li>
       <li><a href="/contact">Contact</a></li>
-      <li><a href="/security">Vulnerabilities/Bug Bounty</a></li>
+      <%# <li><a href="/security">Vulnerabilities/Bug Bounty</a></li> %>
       <li><a href="/code-of-conduct">Code of Conduct</a></li>
-      <li><a href="/downloads">Get the mobile app</a></li>
+      <%# <li><a href="/downloads">Get the mobile app</a></li> %>
     </ul>
   </div>
   <div class="social-links flex justify-center p-4 mt-4">

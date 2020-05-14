@@ -25,9 +25,9 @@ class SiteConfig < RailsSettings::Base
   # Social Media and Email
   field :staff_user_id, type: :integer, default: 1
   field :social_media_handles, type: :hash, default: {
-    twitter: nil,
+    twitter: "letsbuildgg",
     facebook: nil,
-    github: nil,
+    github: "letsbuildgg",
     instagram: nil,
     twitch: nil
   }
