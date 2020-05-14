@@ -18,9 +18,9 @@ for the page to be usable.
 Here are a couple of examples of dynamic import usage on LetsBuild.gg:
 
 - The
-  [Onboarding flow](https://github.com/thepracticaldev/dev.to/blob/master/app/javascript/packs/Onboarding.jsx#L28).
+  [Onboarding flow](https://github.com/letsbuildgg/dev.to/blob/master/app/javascript/packs/Onboarding.jsx#L28).
 - In
-  [connect](https://github.com/thepracticaldev/dev.to/blob/master/app/javascript/chat/codeEditor.jsx#L11)
+  [connect](https://github.com/letsbuildgg/dev.to/blob/master/app/javascript/chat/codeEditor.jsx#L11)
   (chat)
 
 LetsBuild.gg uses [webpacker](frontend/webpacker) (webpack), so what webpack

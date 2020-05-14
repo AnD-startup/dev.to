@@ -29,7 +29,7 @@ same branding.
 - We have a minimal approach to importing dependencies, so few if any custom
   fonts on-site for that reason.
 - Refer to the `variables.scss`
-  [file in our main repo](https://github.com/thepracticaldev/dev.to/blob/master/app/assets/stylesheets/variables.scss)
+  [file in our main repo](https://github.com/letsbuildgg/dev.to/blob/master/app/assets/stylesheets/variables.scss)
   to reference commonly-used colors and fonts.
 
 ## Design License Info

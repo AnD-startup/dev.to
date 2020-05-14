@@ -37,7 +37,7 @@ Here is a bunch of liquid tags supported on LetsBuild.gg:
 {% podcast https://letsbuild.gg/basecspodcast/s2e2--queues-irl %}
 {% twitter 834439977220112384 %}
 {% glitch earthy-course %}
-{% github thepracticaldev/dev.to %}
+{% github letsbuildgg/dev.to %}
 {% youtube dQw4w9WgXcQ %}
 {% vimeo 193110695 %}
 {% slideshare rdOzN9kr1yK5eE %}
@@ -105,4 +105,4 @@ classes should generally be prepended by `ltag__`. e.g. `ltag__tag__content`
 etc.
 
 Here is an example of a good Liquid Tag pull request...
-https://github.com/thepracticaldev/dev.to/pull/3801
+https://github.com/letsbuildgg/dev.to/pull/3801

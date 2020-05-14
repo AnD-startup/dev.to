@@ -30,13 +30,13 @@ you may anonymously contact the team with our
 
 ### Where to contribute
 
-All [issues](https://github.com/thepracticaldev/dev.to/issues) labeled
-[ready for dev](https://github.com/thepracticaldev/dev.to/issues?q=is%3Aissue+is%3Aopen+label%3A%22ready+for+dev%22)
+All [issues](https://github.com/letsbuildgg/dev.to/issues) labeled
+[ready for dev](https://github.com/letsbuildgg/dev.to/issues?q=is%3Aissue+is%3Aopen+label%3A%22ready+for+dev%22)
 and
-[type: bug](https://github.com/thepracticaldev/dev.to/issues?q=is%3Aissue+is%3Aopen+label%3A%22type%3A+bug%22)
+[type: bug](https://github.com/letsbuildgg/dev.to/issues?q=is%3Aissue+is%3Aopen+label%3A%22type%3A+bug%22)
 all are up for grabs.
 
-- [good first issue](https://github.com/thepracticaldev/dev.to/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22+)
+- [good first issue](https://github.com/letsbuildgg/dev.to/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22+)
   are issues meant for newer developers.
 
 While PRs without an associated `ready for dev` or `type: bug` labeled issue may
@@ -44,14 +44,14 @@ still be merged, please note that the core team will prioritize PRs that solve
 existing issues. We strongly encourage creating an issue before working on a PR!
 
 When in doubt, ask a
-[core team member](https://github.com/thepracticaldev/dev.to/#core-team) by
+[core team member](https://github.com/letsbuildgg/dev.to/#core-team) by
 mentioning us on the issue.
 
 **Documentation** is almost always a great place to start contributing to a new
 project. LetsBuild.gg is an Open Source, community-driven project, so providing
 and maintaining quality documentation is one of our most important jobs. You can
 find more information about contributing to the documentation in the
-[docs/ directory](https://github.com/thepracticaldev/dev.to/blob/master/docs/contributing.md)!
+[docs/ directory](https://github.com/letsbuildgg/dev.to/blob/master/docs/contributing.md)!
 
 **Refactoring** code, or improving the code without modifying the behaviour, is
 an area that can probably be done based on intuition and may not require much
@@ -76,7 +76,7 @@ can all get on the same page. As always, when in doubt, ask!
    to your local machine. Follow the initial setup
    [here](https://docs.dev.to/installation/).
 2. Create a branch with your GitHub username as a prefix and the ID of the
-   [issue](https://github.com/thepracticaldev/dev.to/issues) as a suffix, for
+   [issue](https://github.com/letsbuildgg/dev.to/issues) as a suffix, for
    example: `git checkout -b USERNAME/that-new-feature-1234` or
    `git checkout -b USERNAME/fixing-that-bug-1234` where `USERNAME` should be
    replaced by your username and `1234` is the ID of the issue tied to your pull

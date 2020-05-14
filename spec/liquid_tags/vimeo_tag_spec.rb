@@ -35,7 +35,7 @@ RSpec.describe VimeoTag, type: :liquid_tag do
   # either it should run liquid before markdown, or markdown shouldn't
   # mess with the liquid tags (there is a fn to escape them, but it doesn't
   # seem to escape the url here)
-  # https://github.com/thepracticaldev/dev.to/blob/master/app/labor/markdown_parser.rb#L73-L92
+  # https://github.com/letsbuildgg/dev.to/blob/master/app/labor/markdown_parser.rb#L73-L92
   # My test suite isn't entirely passing, and I've spent longer on this than I
   # wanted to, io Instead of looking into those, I'm going to just make this work  ¯\_(ツ)_/¯
   it "accepts urls that were over-eagerly turned into links by markdown" do

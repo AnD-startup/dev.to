@@ -1,6 +1,6 @@
 /*
  * kept as a stand function so it can be loaded again without issue
- * see: https://github.com/thepracticaldev/dev.to/issues/6468
+ * see: https://github.com/letsbuildgg/dev.to/issues/6468
  */
 function sponsorClickHandler(event) {
   if (event.target.classList.contains('follow-action-button')) {

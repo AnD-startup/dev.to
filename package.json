@@ -69,14 +69,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thepracticaldev/dev.to.git"
+    "url": "git+https://github.com/letsbuildgg/dev.to.git"
   },
   "author": "",
   "license": "AGPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/thepracticaldev/dev.to/issues"
+    "url": "https://github.com/letsbuildgg/dev.to/issues"
   },
-  "homepage": "https://github.com/thepracticaldev/dev.to#readme",
+  "homepage": "https://github.com/letsbuildgg/dev.to#readme",
   "devDependencies": {
     "@stoplight/spectral": "5.3.0",
     "@storybook/addon-actions": "^5.3.18",

@@ -79,7 +79,7 @@
     <input class="uploaded-image" id="uploaded-image-main" />
   </div>
   <div class="actions" id="submit-wrapper">
-    <%# See https://github.com/thepracticaldev/dev.to/issues/7081 %>
+    <%# See https://github.com/letsbuildgg/dev.to/issues/7081 %>
     <%= link_to((:back if sanitized_referer(request.referer)) || commentable&.path || @comment.path, "aria-label": "Cancel action") do %>
       <button id="cancel-button" class="comment-action-button comment-action-cancel">CANCEL</button>
     <% end %>

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.github.com/repos/thepracticaldev/dev.to/issues/comments/621043602?per_page=100
+    uri: https://api.github.com/repos/letsbuildgg/dev.to/issues/comments/621043602?per_page=100
     body:
       encoding: US-ASCII
       string: ''
@@ -69,7 +69,7 @@ http_interactions:
       - F3AC:786B:2668DF:351A29:5EAE0845
     body:
       encoding: ASCII-8BIT
-      string: '{"url":"https://api.github.com/repos/thepracticaldev/dev.to/issues/comments/621043602","html_url":"https://github.com/thepracticaldev/dev.to/issues/7434#issuecomment-621043602","issue_url":"https://api.github.com/repos/thepracticaldev/dev.to/issues/7434","id":621043602,"node_id":"MDEyOklzc3VlQ29tbWVudDYyMTA0MzYwMg==","user":{"login":"catalinpit","id":25515812,"node_id":"MDQ6VXNlcjI1NTE1ODEy","avatar_url":"https://avatars3.githubusercontent.com/u/25515812?u=2c7e3d9e557cc819c3dd2069f5e4904d6a365ad1&v=4","gravatar_id":"","url":"https://api.github.com/users/catalinpit","html_url":"https://github.com/catalinpit","followers_url":"https://api.github.com/users/catalinpit/followers","following_url":"https://api.github.com/users/catalinpit/following{/other_user}","gists_url":"https://api.github.com/users/catalinpit/gists{/gist_id}","starred_url":"https://api.github.com/users/catalinpit/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/catalinpit/subscriptions","organizations_url":"https://api.github.com/users/catalinpit/orgs","repos_url":"https://api.github.com/users/catalinpit/repos","events_url":"https://api.github.com/users/catalinpit/events{/privacy}","received_events_url":"https://api.github.com/users/catalinpit/received_events","type":"User","site_admin":false},"created_at":"2020-04-29T07:46:28Z","updated_at":"2020-04-29T07:46:28Z","author_association":"CONTRIBUTOR","body":"What
+      string: '{"url":"https://api.github.com/repos/letsbuildgg/dev.to/issues/comments/621043602","html_url":"https://github.com/letsbuildgg/dev.to/issues/7434#issuecomment-621043602","issue_url":"https://api.github.com/repos/letsbuildgg/dev.to/issues/7434","id":621043602,"node_id":"MDEyOklzc3VlQ29tbWVudDYyMTA0MzYwMg==","user":{"login":"catalinpit","id":25515812,"node_id":"MDQ6VXNlcjI1NTE1ODEy","avatar_url":"https://avatars3.githubusercontent.com/u/25515812?u=2c7e3d9e557cc819c3dd2069f5e4904d6a365ad1&v=4","gravatar_id":"","url":"https://api.github.com/users/catalinpit","html_url":"https://github.com/catalinpit","followers_url":"https://api.github.com/users/catalinpit/followers","following_url":"https://api.github.com/users/catalinpit/following{/other_user}","gists_url":"https://api.github.com/users/catalinpit/gists{/gist_id}","starred_url":"https://api.github.com/users/catalinpit/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/catalinpit/subscriptions","organizations_url":"https://api.github.com/users/catalinpit/orgs","repos_url":"https://api.github.com/users/catalinpit/repos","events_url":"https://api.github.com/users/catalinpit/events{/privacy}","received_events_url":"https://api.github.com/users/catalinpit/received_events","type":"User","site_admin":false},"created_at":"2020-04-29T07:46:28Z","updated_at":"2020-04-29T07:46:28Z","author_association":"CONTRIBUTOR","body":"What
         do you think, @ludwiczakpawel?"}'
     http_version: null
   recorded_at: Sat, 02 May 2020 23:54:45 GMT

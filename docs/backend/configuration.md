@@ -19,7 +19,7 @@ credentials and third party services. Examples:
 - `STRIPE_SECRET_KEY`
 
 Settings managed via ENVied can be found in
-[`Envfile`](https://github.com/thepracticaldev/dev.to/blob/master/Envfile) (see
+[`Envfile`](https://github.com/letsbuildgg/dev.to/blob/master/Envfile) (see
 [Configuring Environment Variables](../getting-started/config-env.md)) and
 viewed at `/internal/config` (see [Accessing the admin panel](./admin.md)):
 
@@ -35,7 +35,7 @@ Examples:
 - `suggested_tags`
 
 These settings can be accessed via the
-[`SiteConfig`](https://github.com/thepracticaldev/dev.to/blob/master/app/models/site_config.rb)
+[`SiteConfig`](https://github.com/letsbuildgg/dev.to/blob/master/app/models/site_config.rb)
 object and viewed / modified via `/internal/config` (see
 [Accessing the admin panel](./admin.md)).
 

@@ -171,7 +171,7 @@ RSpec.describe Article, type: :model do
 
     describe "liquid tags" do
       it "is not valid if it contains invalid liquid tags" do
-        body = "{% github /thepracticaldev/dev.to %}"
+        body = "{% github /letsbuildgg/dev.to %}"
         article = build(:article, body_markdown: body)
         expect(article).not_to be_valid
         expect(article.errors[:base]).to eq(["Invalid Github Repo link"])
@@ -188,7 +188,7 @@ RSpec.describe Article, type: :model do
     describe "tag validation" do
       let(:article) { build(:article, user: user) }
 
-      # See https://github.com/thepracticaldev/dev.to/pull/6302
+      # See https://github.com/letsbuildgg/dev.to/pull/6302
       # rubocop:disable RSpec/VerifiedDoubles
       it "does not modify the tag list if there are no adjustments" do
         allow(TagAdjustment).to receive(:where).and_return(TagAdjustment.none)

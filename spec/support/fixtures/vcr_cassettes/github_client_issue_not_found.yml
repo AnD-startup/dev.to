@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.github.com/repos/thepracticaldev/dev.to/issues/0
+    uri: https://api.github.com/repos/letsbuildgg/dev.to/issues/0
     body:
       encoding: US-ASCII
       string: ''
