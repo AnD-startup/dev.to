@@ -275,9 +275,9 @@ RSpec.describe "StoriesIndex", type: :request do
     end
 
     it "shows meta keywords" do
-      SiteConfig.meta_keywords = { tag: "software engineering, ruby" }
+      SiteConfig.meta_keywords = { tag: "indie developer, ruby" }
       get "/t/#{tag.name}"
-      expect(response.body).to include("<meta name=\"keywords\" content=\"software engineering, ruby, #{tag.name}\">")
+      expect(response.body).to include("<meta name=\"keywords\" content=\"indie developer, ruby, #{tag.name}\">")
     end
 
     context "with user signed in" do

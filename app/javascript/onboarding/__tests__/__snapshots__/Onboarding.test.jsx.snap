@@ -498,7 +498,7 @@ preact-render-spy (1 nodes)
             type="text"
             name="employment_title"
             id="employment_title"
-            placeholder="e.g. Software Engineer"
+            placeholder="e.g. Indie Developer"
             onChange={[Function bound handleChange]}
             maxLength="60"
            />

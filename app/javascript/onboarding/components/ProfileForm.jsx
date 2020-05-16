@@ -125,7 +125,7 @@ class ProfileForm extends Component {
                 type="text"
                 name="employment_title"
                 id="employment_title"
-                placeholder="e.g. Software Engineer"
+                placeholder="e.g. Indie Developer"
                 onChange={this.handleChange}
                 maxLength="60"
               />

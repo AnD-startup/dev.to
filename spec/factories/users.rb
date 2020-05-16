@@ -147,7 +147,7 @@ FactoryBot.define do
 
     trait :with_all_info do
       education { "LetsBuild.gg University" }
-      employment_title { "Software Engineer" }
+      employment_title { "Indie Developer" }
       employer_name { "LetsBuild.gg" }
       employer_url { "http://letsbuild.gg" }
       currently_learning { "Preact" }
