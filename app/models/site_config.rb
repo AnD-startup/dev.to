@@ -62,7 +62,7 @@ class SiteConfig < RailsSettings::Base
   # Onboarding
   field :onboarding_taskcard_image, type: :string, default: "https://res.cloudinary.com/dr4ma05jp/image/upload/v1589859600/logoinvert_ir9viy.svg"
   field :suggested_tags, type: :array, default: %w[indiedev unity unreal gamemaker pixelart 3d 2d roguelike platformer]
-  field :suggested_users, type: :array, default: %w[robert chris ryan]
+  field :suggested_users, type: :array, default: %w[rcarlson cpluta rgails]
 
   # Images
   field :main_social_image, type: :string, default: "https://res.cloudinary.com/dr4ma05jp/image/upload/v1589859512/1500x1500_wdoipn.png"
