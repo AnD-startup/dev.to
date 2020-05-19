@@ -60,16 +60,16 @@ class SiteConfig < RailsSettings::Base
   field :campaign_sidebar_image, type: :string, default: nil
 
   # Onboarding
-  field :onboarding_taskcard_image, type: :string, default: "/assets/logoinvert.svg"
+  field :onboarding_taskcard_image, type: :string, default: "https://res.cloudinary.com/dr4ma05jp/image/upload/v1589859600/logoinvert_ir9viy.svg"
   field :suggested_tags, type: :array, default: %w[indiedev unity unreal gamemaker pixelart 3d 2d roguelike platformer]
   field :suggested_users, type: :array, default: %w[robert chris ryan]
 
   # Images
-  field :main_social_image, type: :string, default: "/assets/1500x500.jpg"
+  field :main_social_image, type: :string, default: "https://res.cloudinary.com/dr4ma05jp/image/upload/v1589859512/1500x1500_wdoipn.png"
   field :favicon_url, type: :string, default: "favicon.png"
-  field :logo_png, type: :string, default: "/assets/500x500.jpg"
+  field :logo_png, type: :string, default: "https://res.cloudinary.com/dr4ma05jp/image/upload/v1589859417/500x500_gvlpml.png"
   field :logo_svg, type: :string, default: ""
-  field :primary_sticker_image_url, type: :string, default: "/assets/logo.svg"
+  field :primary_sticker_image_url, type: :string, default: "https://res.cloudinary.com/dr4ma05jp/image/upload/v1589859417/logo_tjxgja.svg"
 
   # Rate Limits
   field :rate_limit_follow_count_daily, type: :integer, default: 500
