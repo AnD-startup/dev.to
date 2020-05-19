@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe Bufferizer, type: :labor do
   let(:user) { create(:user) }
   let(:listing) { create(:classified_listing, user_id: user.id) }
-  let(:tag) { create(:tag, buffer_profile_id_code: "test")}
+  let(:tag) { create(:tag, buffer_profile_id_code: "test") }
   let(:article) { create(:article, user_id: user.id, tags: tag.name) }
 
   it "sends to buffer twitter" do
@@ -18,12 +18,11 @@ RSpec.describe Bufferizer, type: :labor do
     expect(BufferUpdate.last.approver_user_id).to be user.id
   end
 
-
   it "sends to buffer sattelite twitter" do
-    tweet = "test tweet #DEVCommunity"
+    tweet = "test tweet #letsbuildgg"
     described_class.new("article", article, tweet).satellite_tweet!
     expect(article.last_buffered.utc.to_i).to be > 2.minutes.ago.to_i
-    expect(BufferUpdate.last.body_text).to include(" #DEVCommunity ##{tag.name} http")
+    expect(BufferUpdate.last.body_text).to include(" #letsbuildgg ##{tag.name} http")
   end
 
   it "sends to buffer facebook" do
