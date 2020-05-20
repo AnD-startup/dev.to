@@ -18,7 +18,7 @@ module CacheBuster
     # fastly.purge(path)
     #
     # https://github.com/fastly/fastly-ruby#efficient-purging
-    nil # unless Rails.env.production?
+    # return unless Rails.env.production?
 
     # HTTParty.post("https://api.fastly.com/purge/https://#{ApplicationConfig['APP_DOMAIN']}#{path}",
     #              headers: { "Fastly-Key" => ApplicationConfig["FASTLY_API_KEY"] })
