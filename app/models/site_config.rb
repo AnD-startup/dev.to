@@ -12,10 +12,10 @@ class SiteConfig < RailsSettings::Base
   cache_prefix { "v1" }
 
   # Community Content
-  field :community_description, type: :string, default: "A constructive and inclusive social network. Open source and radically transparent."
-  field :community_member_description, type: :string, default: "amazing humans who code."
+  field :community_description, type: :string, default: "A place for indie game devs to share, collaborate and grow all while building great games."
+  field :community_member_description, type: :string, default: "amazing people who create amazing games."
   field :community_member_label, type: :string, default: "user"
-  field :tagline, type: :string, default: "We're a place where coders share, stay up-to-date and grow their careers."
+  field :tagline, type: :string, default: "We're a place where indie game devs share, collaborate and grow all while building great games."
 
   # Mascot
   field :mascot_user_id, type: :integer, default: 1
