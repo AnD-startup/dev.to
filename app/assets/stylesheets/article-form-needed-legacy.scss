@@ -493,10 +493,10 @@
   }
 
   .prefill-non-logged-in-message {
-    background: lighten($yellow, 12%);
+    background: '#ffffff';
     border-radius: 8px;
     padding: 10px 0px;
-    border: 3px solid $yellow;
+    border: 3px solid $blue;
 
     .rainbow-logo {
       height: calc(100px + 1vw);
