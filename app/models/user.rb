@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  resourcify
+
   include CloudinaryHelper
   include Searchable
   include Storext.model
@@ -30,10 +32,9 @@ class User < ApplicationRecord
     reserved_username: "username is reserved"
   }.freeze
 
-  attr_accessor(
-    :scholar_email, :new_note, :note_for_current_role, :user_status, :pro, :merge_user_id,
-    :add_credits, :remove_credits, :add_org_credits, :remove_org_credits, :ghostify
-  )
+  attr_accessor :scholar_email, :new_note, :note_for_current_role, :user_status, :pro, :merge_user_id,
+                :add_credits, :remove_credits, :add_org_credits, :remove_org_credits, :ghostify,
+                :ip_address
 
   rolify after_add: :index_roles, after_remove: :index_roles
 
@@ -43,6 +44,10 @@ class User < ApplicationRecord
 
   acts_as_followable
   acts_as_follower
+
+  has_many :source_authored_user_subscriptions, class_name: "UserSubscription", foreign_key: :author_id, inverse_of: :author, dependent: :destroy
+  has_many :subscribers, through: :source_authored_user_subscriptions, dependent: :destroy
+  has_many :subscribed_to_user_subscriptions, class_name: "UserSubscription", foreign_key: :subscriber_id, inverse_of: :subscriber, dependent: :destroy
 
   has_many :access_grants, class_name: "Doorkeeper::AccessGrant", foreign_key: :resource_owner_id, inverse_of: :resource_owner, dependent: :delete_all
   has_many :access_tokens, class_name: "Doorkeeper::AccessToken", foreign_key: :resource_owner_id, inverse_of: :resource_owner, dependent: :delete_all
@@ -58,7 +63,7 @@ class User < ApplicationRecord
   has_many :blocker_blocks, class_name: "UserBlock", foreign_key: :blocker_id, inverse_of: :blocker, dependent: :delete_all
   has_many :chat_channel_memberships, dependent: :destroy
   has_many :chat_channels, through: :chat_channel_memberships
-  has_many :classified_listings, dependent: :destroy
+  has_many :listings, dependent: :destroy
   has_many :collections, dependent: :destroy
   has_many :comments, dependent: :destroy
   has_many :created_podcasts, class_name: "Podcast", foreign_key: :creator_id, inverse_of: :creator, dependent: :nullify
@@ -70,6 +75,7 @@ class User < ApplicationRecord
   has_many :github_repos, dependent: :destroy
   has_many :html_variants, dependent: :destroy
   has_many :identities, dependent: :destroy
+  has_many :identities_enabled, -> { enabled }, class_name: "Identity", inverse_of: false
   has_many :mentions, dependent: :destroy
   has_many :messages, dependent: :destroy
   has_many :notes, as: :noteable, inverse_of: :noteable
@@ -86,12 +92,9 @@ class User < ApplicationRecord
   has_many :rating_votes, dependent: :destroy
   has_many :reactions, dependent: :destroy
   has_many :reporter_feedback_messages, class_name: "FeedbackMessage", inverse_of: :reporter, foreign_key: :reporter_id, dependent: :nullify
-  has_many :response_templates, foreign_key: :user_id, inverse_of: :user, dependent: :destroy
+  has_many :response_templates, inverse_of: :user, dependent: :destroy
   has_many :tweets, dependent: :destroy
-  has_many :webhook_endpoints, class_name: "Webhook::Endpoint", foreign_key: :user_id, inverse_of: :user, dependent: :delete_all
-
-  has_one :counters, class_name: "UserCounter", dependent: :destroy
-  has_one :pro_membership, dependent: :destroy
+  has_many :webhook_endpoints, class_name: "Webhook::Endpoint", inverse_of: :user, dependent: :delete_all
 
   mount_uploader :profile_image, ProfileImageUploader
 
@@ -140,19 +143,12 @@ class User < ApplicationRecord
   validate :unique_including_orgs_and_podcasts, if: :username_changed?
   validate :validate_feed_url, if: :feed_url_changed?
   validate :validate_mastodon_url
+  validate :can_send_confirmation_email
+  validate :update_rate_limit
 
-  alias_attribute :positive_reactions_count, :reactions_count
+  alias_attribute :public_reactions_count, :reactions_count
   alias_attribute :subscribed_to_welcome_notifications?, :welcome_notifications
 
-  scope :with_this_week_comments, lambda { |number|
-    includes(:counters).joins(:counters).where("(user_counters.data -> 'comments_these_7_days')::int >= ?", number)
-  }
-  scope :with_previous_week_comments, lambda { |number|
-    includes(:counters).joins(:counters).where("(user_counters.data -> 'comments_prior_7_days')::int >= ?", number)
-  }
-  scope :top_commenters, lambda { |number = 10|
-    includes(:counters).order(Arel.sql("user_counters.data -> 'comments_these_7_days' DESC")).limit(number)
-  }
   scope :eager_load_serialized_data, -> { includes(:roles) }
 
   after_save :bust_cache
@@ -166,7 +162,6 @@ class User < ApplicationRecord
   before_validation :set_config_input
   before_validation :downcase_email
   before_validation :check_for_username_change
-  before_destroy :destroy_empty_dm_channels, prepend: true
   before_destroy :destroy_follows, prepend: true
   before_destroy :unsubscribe_from_newsletters, prepend: true
 
@@ -290,8 +285,8 @@ class User < ApplicationRecord
   end
 
   def pro?
-    Rails.cache.fetch("user-#{id}/has_pro_membership", expires_in: 200.hours) do
-      pro_membership&.active? || has_role?(:pro)
+    Rails.cache.fetch("user-#{id}/has_pro_role", expires_in: 200.hours) do
+      has_role?(:pro)
     end
   end
 
@@ -300,7 +295,7 @@ class User < ApplicationRecord
   end
 
   def trusted
-    Rails.cache.fetch("user-#{id}/has_trusted_role", expires_in: 200.hours) do
+    @trusted ||= Rails.cache.fetch("user-#{id}/has_trusted_role", expires_in: 200.hours) do
       has_role? :trusted
     end
   end
@@ -449,6 +444,25 @@ class User < ApplicationRecord
     search_score
   end
 
+  def authenticated_through?(provider_name)
+    return false unless Authentication::Providers.available?(provider_name)
+    return false unless Authentication::Providers.enabled?(provider_name)
+
+    identities_enabled.exists?(provider: provider_name)
+  end
+
+  def authenticated_with_all_providers?
+    identities_enabled.pluck(:provider).map(&:to_sym) == Authentication::Providers.enabled
+  end
+
+  def rate_limiter
+    RateLimitChecker.new(self)
+  end
+
+  def flipper_id
+    "User:#{id}"
+  end
+
   private
 
   def estimate_default_language
@@ -576,22 +590,13 @@ class User < ApplicationRecord
   end
 
   def tag_keywords_for_search
-    employer_name.to_s + mostly_work_with.to_s + available_for.to_s
+    "#{employer_name}#{mostly_work_with}#{available_for}"
   end
 
   def search_score
     counts_score = (articles_count + comments_count + reactions_count + badge_achievements_count) * 10
     score = (counts_score + tag_keywords_for_search.size) * reputation_modifier
     score.to_i
-  end
-
-  def destroy_empty_dm_channels
-    return if chat_channels.empty? ||
-      chat_channels.where(channel_type: "direct").empty?
-
-    empty_dm_channels = chat_channels.where(channel_type: "direct").
-      select { |chat_channel| chat_channel.messages.empty? }
-    empty_dm_channels.destroy_all
   end
 
   def destroy_follows
@@ -602,5 +607,23 @@ class User < ApplicationRecord
 
   def index_roles(_role)
     index_to_elasticsearch_inline
+  end
+
+  def can_send_confirmation_email
+    return if changes[:email].blank? || id.blank?
+
+    rate_limiter.track_limit_by_action(:send_email_confirmation)
+    rate_limiter.check_limit!(:send_email_confirmation)
+  rescue RateLimitChecker::LimitReached => e
+    errors.add(:email, "confirmation could not be sent. #{e.message}")
+  end
+
+  def update_rate_limit
+    return unless persisted?
+
+    rate_limiter.track_limit_by_action(:user_update)
+    rate_limiter.check_limit!(:user_update)
+  rescue RateLimitChecker::LimitReached => e
+    errors.add(:base, "User could not be saved. #{e.message}")
   end
 end

@@ -1,6 +1,6 @@
 import { h } from 'preact';
 import PropTypes from 'prop-types';
-import { defaultChildrenPropTypes } from '../../src/components/common-prop-types';
+import { defaultChildrenPropTypes } from '../../common-prop-types';
 
 function getAdditionalClassNames({
   variant,
@@ -39,24 +39,29 @@ function getAdditionalClassNames({
   return additionalClassNames;
 }
 
-export const Button = ({
-  children,
-  variant = 'primary',
-  tagName = 'button',
-  inverted,
-  contentType = 'text',
-  size = 'default',
-  className,
-  icon,
-  url,
-  buttonType,
-  disabled,
-  onClick,
-  onMouseOver,
-  onMouseOut,
-  onFocus,
-  onBlur,
-}) => {
+export const Button = (props) => {
+  const {
+    children,
+    variant = 'primary',
+    tagName = 'button',
+    inverted,
+    contentType = 'text',
+    size = 'default',
+    className,
+    icon,
+    url,
+    buttonType,
+    disabled,
+    onClick,
+    onMouseOver,
+    onMouseOut,
+    onFocus,
+    onBlur,
+    tabIndex,
+    title,
+    ...restOfProps
+  } = props;
+
   const ComponentName = tagName;
   const Icon = icon;
   const otherProps =
@@ -81,7 +86,10 @@ export const Button = ({
       onMouseOut={onMouseOut}
       onFocus={onFocus}
       onBlur={onBlur}
+      tabIndex={tabIndex}
+      title={title}
       {...otherProps}
+      {...restOfProps}
     >
       {contentType !== 'text' && contentType !== 'icon-right' && Icon && (
         <Icon />
@@ -111,6 +119,8 @@ Button.defaultProps = {
   onMouseOut: undefined,
   onFocus: undefined,
   onBlur: undefined,
+  tabIndex: undefined,
+  title: undefined,
 };
 
 Button.propTypes = {
@@ -146,4 +156,6 @@ Button.propTypes = {
   onMouseOut: PropTypes.func,
   onFocus: PropTypes.func,
   onBlur: PropTypes.func,
+  tabIndex: PropTypes.number,
+  title: PropTypes.string,
 };

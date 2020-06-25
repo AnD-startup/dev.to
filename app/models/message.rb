@@ -84,7 +84,7 @@ class Message < ApplicationRecord
       HTML
     elsif username == "all" && chat_channel.channel_type == "invite_only"
       <<~HTML
-        <a class='comment-mentioned-user comment-mentioned-all' data-content="sidecar_all" href="#">@#{username}</a>
+        <a class='comment-mentioned-user comment-mentioned-all' data-content="chat_channel_setting" href="#">@#{username}</a>
       HTML
     else
       mention
@@ -153,7 +153,7 @@ class Message < ApplicationRecord
                       Let's video chat 😄
                     </h1>
                     </a>".html_safe
-               elsif html.to_s.strip == "<p>/play codenames</p>" #proof of concept
+               elsif html.to_s.strip == "<p>/play codenames</p>" # proof of concept
                  "<a href='https://www.horsepaste.com/connect-channel-#{rand(1_000_000_000)}'
                     class='chatchannels__richlink chatchannels__richlink--base'
                     target='_blank' rel='noopener' data-content='sidecar-content-plus-video'>
@@ -161,7 +161,7 @@ class Message < ApplicationRecord
                       Let's play codenames 🤐
                     </h1>
                     </a>".html_safe
-                end
+               end
     html = response if response
     html
   end
@@ -215,6 +215,6 @@ class Message < ApplicationRecord
       chat_channel.last_message_at > 30.minutes.ago ||
       recipient.email_connect_messages == false
 
-    NotifyMailer.new_message_email(self).deliver
+    NotifyMailer.with(message: self).new_message_email.deliver_now
   end
 end

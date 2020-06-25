@@ -1,6 +1,7 @@
 ---
 title: Backend Guide
 items:
+  - audit-log.md
   - authentication.md
   - auth-twitter.md
   - auth-github.md
@@ -15,6 +16,7 @@ items:
   - previewing-emails.md
   - notification.md
   - scheduled-jobs.md
+  - metrics.md
 ---
 
 # Backend Guide

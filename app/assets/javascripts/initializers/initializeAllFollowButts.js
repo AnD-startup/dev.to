@@ -1,8 +1,57 @@
 function initializeAllFollowButts() {
   var followButts = document.getElementsByClassName('follow-action-button');
   for (var i = 0; i < followButts.length; i++) {
-    initializeFollowButt(followButts[i]);
+    if (!followButts[i].className.includes("follow-user")) {
+      initializeFollowButt(followButts[i]);
+    };
   }
+}
+
+function fetchUserFollowStatuses(idButtonHash) {
+  const url = new URL("/follows/bulk_show", document.location);
+  const searchParams = new URLSearchParams();
+  Object.keys(idButtonHash).forEach((id) => {
+    searchParams.append("ids[]", id);
+  });
+  searchParams.append("followable_type", "User");
+  url.search = searchParams;
+
+  fetch(url, {
+    method: 'GET',
+    headers: {
+      Accept: 'application/json',
+      'X-CSRF-Token': window.csrfToken,
+      'Content-Type': 'application/json',
+    },
+    credentials: 'same-origin',
+  }).then((response) => response.json())
+    .then((idStatuses) => {
+      Object.keys(idStatuses).forEach(function(id) {
+        addButtClickHandle(idStatuses[id], idButtonHash[id]);
+      })
+    });
+}
+
+function initializeUserFollowButtons(buttons) {
+  if (buttons.length > 0) {
+    var userIds = {};
+    for (var i = 0; i < buttons.length; i++) {
+      var userStatus = document.body.getAttribute('data-user-status');
+      if (userStatus === 'logged-out') {
+        addModalEventListener(buttons[i]);
+      } else {
+        var userId = JSON.parse(buttons[i].dataset.info).id
+        userIds[userId] = buttons[i];
+      }
+    }
+
+    if (Object.keys(userIds).length > 0) { fetchUserFollowStatuses(userIds); }
+  }
+}
+
+function initializeUserFollowButts() {
+  var buttons = document.getElementsByClassName('follow-action-button follow-user');
+  initializeUserFollowButtons(buttons);
 }
 
 //private
@@ -158,7 +207,7 @@ function assignState(butt, newState) {
     addFollowText(butt, style);
   } else if (newState === 'self') {
     butt.dataset.verb = 'self';
-    butt.textContent = 'EDIT PROFILE';
+    butt.textContent = 'Edit profile';
   } else {
     butt.dataset.verb = 'follow';
     addFollowingText(butt, style);
@@ -170,9 +219,9 @@ function addFollowText(butt, style) {
   if (style === 'small') {
     butt.textContent = '+';
   } else if (style === 'follow-back') {
-    butt.textContent = '+ FOLLOW BACK';
+    butt.textContent = 'Follow back';
   } else {
-    butt.textContent = '+ FOLLOW';
+    butt.textContent = 'Follow';
   }
 }
 
@@ -180,6 +229,6 @@ function addFollowingText(butt, style) {
   if (style === 'small') {
     butt.textContent = '✓';
   } else {
-    butt.textContent = '✓ FOLLOWING';
+    butt.textContent = 'Following';
   }
 }

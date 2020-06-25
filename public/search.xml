@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
- <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
-   <ShortName>LetsBuild.gg Search</ShortName>
-   <Description>Find posts from the LetsBuild.gg community.</Description>
-   <Tags>software development</Tags>
-   <Contact>support@letsbuild.gg</Contact>
-   <Url type="text/html" 
-        template="https://letsbuild.gg/search?q={searchTerms}"/>
- </OpenSearchDescription>

@@ -24,7 +24,7 @@ class ChatChannelPolicy < ApplicationPolicy
   end
 
   def permitted_attributes
-    %i[channel_name slug command description]
+    %i[channel_name slug command description discoverable]
   end
 
   def create_chat?
@@ -33,6 +33,10 @@ class ChatChannelPolicy < ApplicationPolicy
 
   def block_chat?
     user_part_of_channel && channel_is_direct
+  end
+
+  def update_channel?
+    user_can_edit_channel
   end
 
   private

@@ -1,30 +1,44 @@
 @import '../config/import';
 
+:root {
+  --brand-apple-bg: #000;
+  --brand-apple-color: #fff;
+  --brand-apple-bg-hover: #1b1b1b;
+
+  --brand-twitter-bg: #1da1f2;
+  --brand-twitter-color: #fff;
+  --brand-twitter-bg-hover: #0096f2;
+
+  --brand-github-bg: #24292e;
+  --brand-github-color: #fff;
+  --brand-github-bg-hover: #000;
+}
+
 // Basic styling
 .crayons-btn {
   // Setup
   --border-width: 0px;
   --shadow-color: rgba(0, 0, 0, 0.05);
-  --vertical-padding: #{$su-2};
-  --horizontal-padding: #{$su-4};
-  --font-size: #{$fs-base};
-  --with-icon-padding: #{$su-3};
-  --icon-margin: #{$su-2};
+  --vertical-padding: var(--su-2);
+  --horizontal-padding: var(--su-4);
+  --font-size: var(--fs-base);
+  --with-icon-padding: var(--su-3);
+  --icon-margin: var(--su-2);
 
   position: relative;
   display: inline-block;
   padding: calc(var(--vertical-padding) - var(--border-width))
     calc(var(--horizontal-padding) - var(--border-width));
-  border-radius: $br-default;
+  border-radius: var(--radius);
   outline: none;
   font-family: inherit;
   font-size: var(--font-size);
-  line-height: $su-6; // intentionally not using $lh-* variable.
-  font-weight: $fw-medium;
+  line-height: var(--su-6); // intentionally not using $lh-* variable.
+  font-weight: var(--fw-medium);
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  transition: all $transition-props;
+  transition: all var(--transition-props);
   border: var(--border-width) solid;
 
   // Styles
@@ -47,6 +61,7 @@
   color: var(--color);
 
   &[href]:hover,
+  &[href]:focus,
   &:hover:enabled,
   &:active:enabled,
   &:focus:enabled {
@@ -72,26 +87,26 @@
   }
 
   &--s {
-    --vertical-padding: #{$su-1};
-    --horizontal-padding: #{$su-3};
-    --font-size: #{$fs-s};
-    --with-icon-padding: #{$su-2};
-    --icon-margin: #{$su-1};
+    --vertical-padding: var(--su-1);
+    --horizontal-padding: var(--su-3);
+    --font-size: var(--fs-s);
+    --with-icon-padding: var(--su-2);
+    --icon-margin: var(--su-1);
   }
 
   &--l {
-    --vertical-padding: #{$su-3};
-    --horizontal-padding: #{$su-5};
-    --with-icon-padding: #{$su-3};
-    --icon-margin: #{$su-2};
+    --vertical-padding: var(--su-3);
+    --horizontal-padding: var(--su-5);
+    --with-icon-padding: var(--su-3);
+    --icon-margin: var(--su-2);
   }
 
   &--xl {
-    --vertical-padding: #{$su-4};
-    --horizontal-padding: #{$su-6};
-    --font-size: #{$fs-l};
-    --with-icon-padding: #{$su-5};
-    --icon-margin: #{$su-3};
+    --vertical-padding: var(--su-4);
+    --horizontal-padding: var(--su-6);
+    --font-size: var(--fs-l);
+    --with-icon-padding: var(--su-5);
+    --icon-margin: var(--su-3);
   }
 }
 
@@ -199,22 +214,55 @@
   }
 }
 
+.crayons-btn--brand-apple {
+  --bg: var(--brand-apple-bg);
+  --bg-hover: var(--brand-apple-bg-hover);
+  --color: var(--brand-apple-color);
+  --color-hover: var(--brand-apple-color);
+  --bg-inverted: var(--brand-apple-bg);
+  --bg-inverted-hover: var(--brand-apple-bg-hover);
+  --color-inverted: var(--brand-apple-color);
+  --color-inverted-hover: var(--brand-apple-color);
+}
+
+.crayons-btn--brand-twitter {
+  --bg: var(--brand-twitter-bg);
+  --bg-hover: var(--brand-twitter-bg-hover);
+  --color: var(--brand-twitter-color);
+  --color-hover: var(--brand-twitter-color);
+  --bg-inverted: var(--brand-twitter-bg);
+  --bg-inverted-hover: var(--brand-twitter-bg-hover);
+  --color-inverted: var(--brand-twitter-color);
+  --color-inverted-hover: var(--brand-twitter-color);
+}
+
+.crayons-btn--brand-github {
+  --bg: var(--brand-github-bg);
+  --bg-hover: var(--brand-github-bg-hover);
+  --color: var(--brand-github-color);
+  --color-hover: var(--brand-github-color);
+  --bg-inverted: var(--brand-github-bg);
+  --bg-inverted-hover: var(--brand-github-bg-hover);
+  --color-inverted: var(--brand-github-color);
+  --color-inverted-hover: var(--brand-github-color);
+}
+
 // Icon alone
 .crayons-btn--icon,
 .crayons-btn--icon-rounded {
-  --horizontal-padding: #{$su-2};
+  --horizontal-padding: var(--su-2);
   padding-left: calc(var(--horizontal-padding) - var(--border-width));
   padding-right: calc(var(--horizontal-padding) - var(--border-width));
   &.crayons-btn--s {
-    --horizontal-padding: #{$su-1};
+    --horizontal-padding: var(--su-1);
   }
 
   &.crayons-btn--l {
-    --horizontal-padding: #{$su-3};
+    --horizontal-padding: var(--su-3);
   }
 
   &.crayons-btn--xl {
-    --horizontal-padding: #{$su-4};
+    --horizontal-padding: var(--su-4);
   }
 }
 
@@ -261,13 +309,13 @@
     }
 
     &:first-child {
-      border-top-left-radius: $br-default;
-      border-bottom-left-radius: $br-default;
+      border-top-left-radius: var(--radius);
+      border-bottom-left-radius: var(--radius);
     }
 
     &:last-child {
-      border-top-right-radius: $br-default;
-      border-bottom-right-radius: $br-default;
+      border-top-right-radius: var(--radius);
+      border-bottom-right-radius: var(--radius);
     }
   }
 }
