@@ -385,7 +385,7 @@ RSpec.describe "/internal/config", type: :request do
         end
 
         describe "twitter_hashtag" do
-          twitter_hashtag = "#DEVCommunity"
+          twitter_hashtag = "#letsbuildgg"
           params = { site_config: { twitter_hashtag: twitter_hashtag }, confirmation: "Incorrect confirmation" }
 
           it "does not update the twitter hashtag" do

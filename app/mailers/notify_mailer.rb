@@ -124,7 +124,7 @@ class NotifyMailer < ApplicationMailer
     @user = params[:user]
     attachment = params[:attachment]
 
-    export_filename = "devto-export-#{Date.current.iso8601}.zip"
+    export_filename = "letsbuildgg-export-#{Date.current.iso8601}.zip"
     attachments[export_filename] = attachment
     mail(to: @user.email, subject: "The export of your content is ready")
   end

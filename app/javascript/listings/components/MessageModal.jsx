@@ -26,7 +26,7 @@ const MessageModal = ({
           <b id="generic-contact-message">
             Contact
             {` ${listing.author.name} `}
-            via DEV Connect
+            via Lets Build Connect
           </b>
         </p>
       )}

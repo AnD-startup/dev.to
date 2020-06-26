@@ -8,7 +8,7 @@ const ContactViaConnect = ({ onChange, checked }) => (
       className="listingform__label"
       htmlFor="contact_via_connect"
     >
-      Allow Users to Message Me Via In-App Chat (DEV Connect)
+      Allow Users to Message Me Via In-App Chat (Lets Build Connect)
     </label>
     <input
       type="checkbox"

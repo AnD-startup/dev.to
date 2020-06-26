@@ -10,9 +10,9 @@ export const Crayons = () => (
   <div className="container">
     <h1>Crayons</h1>
     <p>
-      Crayons is the design system of DEV. It will provide you everything you
+      Crayons is the design system of Lets Build. It will provide you everything you
       need to quickly design, build, and ship coherent experience and style
-      across DEV.
+      across Lets Build.
     </p>
     <p>
       In other words - Crayons defines our design language and frontend
@@ -145,7 +145,7 @@ export const Components = () => (
   <div className="container">
     <h1>Components</h1>
     <p>
-      DEV is a Rails application. Most of what we build for views uses ERB
+      Lets Build is a Rails application. Most of what we build for views uses ERB
       templates (*.html.erb files). We also build out parts of or sometimes
       complete views using
       {' '}
@@ -297,7 +297,7 @@ export const Styling = () => (
     </p>
     <h2>Themes</h2>
     <p>
-      DEV support multiple themes so you should always test your work against
+      Lets build support multiple themes so you should always test your work against
       all themes. We have a file with all color variables and each theme has its
       own too.
     </p>

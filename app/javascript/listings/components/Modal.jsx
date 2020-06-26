@@ -43,7 +43,7 @@ const Modal = ({
           />
         )}
         <a href="/about-listings" className="single-listing-info-link">
-          About DEV Listings
+          About Lets Build Listings
         </a>
         <div className="single-listing-container__spacer" />
       </div>

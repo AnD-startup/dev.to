@@ -118,7 +118,7 @@ class SiteConfig < RailsSettings::Base
     instagram: nil,
     twitch: nil
   }
-  field :twitter_hashtag, type: :string, default: "#DEVCommunity"
+  field :twitter_hashtag, type: :string, default: "#letsbuildgg"
 
   # Tags
   field :sidebar_tags, type: :array, default: %w[help challenge discuss explainlikeimfive meta watercooler]

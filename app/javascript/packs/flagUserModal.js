@@ -14,7 +14,7 @@ export default function initializeFlagUserModal(articleAuthorId) {
     </header>
     <div class="crayons-modal__box__body flag-user-modal-body">
       <span>
-        Thanks for keeping DEV safe. Here is what you can do to flag this user:
+        Thanks for keeping Lets Build safe. Here is what you can do to flag this user:
       </span>
       <div class="crayons-fields">
         <div class="crayons-field crayons-field--radio">
@@ -29,7 +29,7 @@ export default function initializeFlagUserModal(articleAuthorId) {
           <label for="vomit-all" class="crayons-field__label">
             Make all posts by this author less visible
             <p class="crayons-field__description">
-              This author consistently posts content that violates DEV's code of conduct because it is harassing, offensive or spammy.
+              This author consistently posts content that violates Lets Build's code of conduct because it is harassing, offensive or spammy.
             </p>
           </label>
         </div>

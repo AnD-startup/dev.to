@@ -371,7 +371,7 @@ export default class ChatChannelSettings extends Component {
             />
           )}
           {currentMembership.role === 'mod' && (
-            <ModFaqSection email="yo@dev.to" />
+            <ModFaqSection email="support@letsbuild.gg" />
           )}
         </div>
       </div>

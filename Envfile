@@ -12,11 +12,11 @@ variable :APP_DOMAIN, :String, default: "localhost:3000"
 variable :APP_PROTOCOL, :String, default: "http://"
 
 # Community Related Variables
-variable :COMMUNITY_COPYRIGHT_START_YEAR, :String, default: "2016"
+variable :COMMUNITY_COPYRIGHT_START_YEAR, :String, default: "2020"
 variable :COMMUNITY_NAME, :String, default: "LetsBuild.gg"
 
 # Email related variables
-variable :DEFAULT_EMAIL, :String, default: "yo@dev.to"
+variable :DEFAULT_EMAIL, :String, default: "support@letsbuild.gg"
 
 # Service timeout length
 variable :RACK_TIMEOUT_WAIT_TIMEOUT, :Integer, default: 100_000

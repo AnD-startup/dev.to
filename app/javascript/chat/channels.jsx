@@ -64,7 +64,7 @@ const Channels = ({
           👋
         </span>{' '}
         Welcome to
-        <b> DEV Connect</b>! You may message anyone you mutually follow.
+        <b> Lets Build Connect</b>! You may message anyone you mutually follow.
       </div>
     );
   }
@@ -83,7 +83,7 @@ const Channels = ({
         <img alt="configration" src={ConfigImage} style={{ height: '18px' }} />
         <div className="chatchannels__configmenu" role="menu">
           <a href="/settings" role="menuitem">
-            DEV Settings
+            Lets Build Settings
           </a>
           <a href="/report-abuse" role="menuitem">
             Report Abuse

@@ -3,7 +3,7 @@
 We expect contributors to abide by our underlying
 [code of conduct](https://letsbuild.gg/code-of-conduct). All conversations and
 discussions on GitHub (issues, pull requests) and across
-[dev.to](https://dev.to) must be respectful and harassment-free.
+[letsbuid.gg](https://letsbuild.gg) must be respectful and harassment-free.
 
 If you feel another member of the community has violated our Code of Conduct,
 you may anonymously contact the team with our
