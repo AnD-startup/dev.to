@@ -60,7 +60,7 @@ class Article < ApplicationRecord
   validate :canonical_url_must_not_have_spaces
   validates :video_state, inclusion: { in: %w[PROGRESSING COMPLETED] }, allow_nil: true
   validates :cached_tag_list, length: { maximum: 126 }
-  validates :main_image, url: { allow_blank: true, schemes: %w[https http] }
+  # validates :main_image, url: { allow_blank: true, schemes: %w[https http] }
   validates :main_image_background_hex_color, format: /\A#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})\z/
   validates :video, url: { allow_blank: true, schemes: %w[https http] }
   validates :video_source_url, url: { allow_blank: true, schemes: ["https"] }
