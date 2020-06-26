@@ -1,6 +1,6 @@
 module BadgeRewarder
   YEARS = { 1 => "one", 2 => "two", 3 => "three" }.freeze
-  REPOSITORIES = ["thepracticaldev/dev.to", "thepracticaldev/DEV-ios", "thepracticaldev/DEV-Android"].freeze
+  REPOSITORIES = ["thepracticaldev/dev.to", "thepracticaldev/LETSBUILD-ios", "thepracticaldev/LETSBUILD-Android"].freeze
 
   LONGEST_STREAK_WEEKS = 16
   LONGEST_STREAK_MESSAGE = "16 weeks! You've achieved the longest #{ApplicationConfig['COMMUNITY_NAME']} writing " \

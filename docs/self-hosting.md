@@ -36,7 +36,7 @@ platform.
 
 ### I want to stand up my own entity using the Forem codebase, how can I help?
 
-- You can help us to generalize the code by removing DEV-specific language and
+- You can help us to generalize the code by removing LETSBUILD-specific language and
   images and replacing them with environment variables or database tables as
   appropriate.
 - You can commit to staying in very close coordination with us as we navigate

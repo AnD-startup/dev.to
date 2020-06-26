@@ -28,10 +28,10 @@ function toggleMenu() {
 }
 
 function initializeTouchDevice() {
-  var isTouchDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|DEV-Native-ios/i.test(
+  var isTouchDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|LETSBUILD-Native-ios/i.test(
     navigator.userAgent,
   );
-  if (navigator.userAgent === 'DEV-Native-ios') {
+  if (navigator.userAgent === 'LETSBUILD-Native-ios') {
     document.body.classList.add('dev-ios-native-body');
   }
   setTimeout(() => {

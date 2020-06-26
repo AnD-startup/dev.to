@@ -106,7 +106,7 @@ function initializePodcastPlayback() {
 
   function isNativeIOS() {
     return (
-      navigator.userAgent === 'DEV-Native-ios' &&
+      navigator.userAgent === 'LETSBUILD-Native-ios' &&
       window &&
       window.webkit &&
       window.webkit.messageHandlers &&
@@ -116,7 +116,7 @@ function initializePodcastPlayback() {
 
   function isNativeAndroid() {
     return (
-      navigator.userAgent === 'DEV-Native-android' &&
+      navigator.userAgent === 'LETSBUILD-Native-android' &&
       typeof AndroidBridge !== 'undefined' &&
       AndroidBridge !== null &&
       AndroidBridge.podcastMessage !== undefined

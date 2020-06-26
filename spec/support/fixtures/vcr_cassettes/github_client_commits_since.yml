@@ -337,7 +337,7 @@ http_interactions:
   recorded_at: Fri, 15 May 2020 13:49:20 GMT
 - request:
     method: get
-    uri: https://api.github.com/repos/thepracticaldev/DEV-ios/commits?per_page=100&since=2020-05-14T21:49:20%2B08:00
+    uri: https://api.github.com/repos/thepracticaldev/LETSBUILD-ios/commits?per_page=100&since=2020-05-14T21:49:20%2B08:00
     body:
       encoding: US-ASCII
       string: ''
@@ -409,7 +409,7 @@ http_interactions:
   recorded_at: Fri, 15 May 2020 13:49:20 GMT
 - request:
     method: get
-    uri: https://api.github.com/repos/thepracticaldev/DEV-Android/commits?per_page=100&since=2020-05-14T21:49:20%2B08:00
+    uri: https://api.github.com/repos/thepracticaldev/LETSBUILD-Android/commits?per_page=100&since=2020-05-14T21:49:20%2B08:00
     body:
       encoding: US-ASCII
       string: ''

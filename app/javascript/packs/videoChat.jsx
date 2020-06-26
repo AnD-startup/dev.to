@@ -116,6 +116,6 @@ function trackEnabled(div, track) {
   }
 }
 
-if (navigator.userAgent === 'DEV-Native-ios') {
+if (navigator.userAgent === 'LETSBUILD-Native-ios') {
   root.innerHTML = '<h2 class="platform-unavailable-message">This feature is not yet available on iPhone</h2>'
 }

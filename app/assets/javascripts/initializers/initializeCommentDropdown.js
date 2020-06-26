@@ -11,7 +11,7 @@ function initializeCommentDropdown() {
 
   function isNativeAndroidDevice() {
     return (
-      navigator.userAgent === 'DEV-Native-android' &&
+      navigator.userAgent === 'LETSBUILD-Native-android' &&
       typeof AndroidBridge !== 'undefined' &&
       AndroidBridge !== null
     );

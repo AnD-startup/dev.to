@@ -225,7 +225,7 @@ export default class ArticleForm extends Component {
     const revert = window.confirm(
       'Are you sure you want to revert to the previous save?',
     );
-    if (!revert && navigator.userAgent !== 'DEV-Native-ios') return;
+    if (!revert && navigator.userAgent !== 'LETSBUILD-Native-ios') return;
 
     this.setState({
       title: this.article.title || '',
