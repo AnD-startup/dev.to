@@ -30,6 +30,7 @@
       <% if user_signed_in? %>
         <%= javascript_packs_with_chunks_tag "Search", "onboardingRedirectCheck", "contentDisplayPolicy", defer: true %>
       <% end %>
+      <!-- Global site tag (gtag.js) - Google Ads: 744246570 --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-744246570"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-744246570'); </script>
       <%= yield(:page_meta) %>
       <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
       <%= favicon_link_tag SiteConfig.favicon_url %>
