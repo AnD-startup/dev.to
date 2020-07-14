@@ -63,8 +63,8 @@ class SiteConfig < RailsSettings::Base
   # Mascot
   field :mascot_user_id, type: :integer, default: 1
   field :mascot_image_url, type: :string, default: "https://dev-to-uploads.s3.amazonaws.com/i/y5767q6brm62skiyywvc.png"
-  field :mascot_footer_image_url, type: :string, default: "https://dev-to-uploads.s3.amazonaws.com/i/wmv3mtusjwb3r13d5h2f.png"
-  field :mascot_image_description, type: :string, default: "Sloan, the sloth mascot"
+  field :mascot_footer_image_url, type: :string, default: "https://res.cloudinary.com/dr4ma05jp/image/upload/v1594699339/pngfuel.com_nym85y.png"
+  field :mascot_image_description, type: :string, default: "Una, the unicorn mascot"
 
   # Meta keywords
   field :meta_keywords, type: :hash, default: {
